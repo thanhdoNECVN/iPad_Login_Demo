@@ -14,15 +14,15 @@
             <objects>
                 <viewController id="erB-q8-uex" customClass="LoginViewController" customModule="iPad_login_Demo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="arC-wl-OJb">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="704"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1133" height="744"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image_2" translatesAutoresizingMaskIntoConstraints="NO" id="muo-Ly-fYt">
-                                <rect key="frame" x="-54" y="-74" width="1241" height="848"/>
+                                <rect key="frame" x="-54" y="0.0" width="1670" height="794"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="OGp-3x-J0h">
-                                <rect key="frame" x="128.5" y="171.5" width="447" height="361"/>
+                                <rect key="frame" x="343" y="191.5" width="447" height="361"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJA-GA-O6o" userLabel="Head View">
                                         <rect key="frame" x="0.0" y="0.0" width="447" height="97"/>
@@ -194,6 +194,9 @@
                                                 <color key="tintColor" red="0.074509806930000005" green="0.1176470518" blue="0.19215688110000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="ロクイン"/>
+                                                <connections>
+                                                    <segue destination="dH8-vm-yUt" kind="show" id="pqE-l2-Zpc"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -957,8 +960,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="dH8-vm-yUt" kind="relationship" relationship="rootViewController" id="cse-LM-7vE"/>
-                        <segue destination="erB-q8-uex" kind="show" id="qlp-Mo-tgn"/>
+                        <segue destination="erB-q8-uex" kind="relationship" relationship="rootViewController" id="3dk-3I-BaM"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qHI-kX-2vs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
