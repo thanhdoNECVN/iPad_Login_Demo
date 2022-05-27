@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightTableViewCell" customModule="iPad_login_Demo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="hFz-tb-bfd" customClass="RightTableViewCell" customModule="iPad_login_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hFz-tb-bfd" id="9nC-Cv-LA6">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AtR-c4-ZzN" userLabel="NewView">
+                        <rect key="frame" x="155" y="12" width="50" height="24"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSI-eF-4N0">
+                                <rect key="frame" x="9.5" y="2.5" width="31" height="19"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.49019610879999997" green="0.78431367870000002" blue="0.87843137979999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="C0R-or-UrG"/>
+                            <constraint firstItem="VSI-eF-4N0" firstAttribute="centerX" secondItem="AtR-c4-ZzN" secondAttribute="centerX" id="fJG-NY-xaL"/>
+                            <constraint firstItem="VSI-eF-4N0" firstAttribute="centerY" secondItem="AtR-c4-ZzN" secondAttribute="centerY" id="wey-pY-ucB"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDa-Rh-llU">
+                        <rect key="frame" x="16" y="12" width="41.5" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="AtR-c4-ZzN" secondAttribute="trailing" constant="10" id="3kH-yE-5Iu"/>
+                    <constraint firstItem="VDa-Rh-llU" firstAttribute="leading" secondItem="9nC-Cv-LA6" secondAttribute="leading" constant="16" id="A0E-zq-hBY"/>
+                    <constraint firstAttribute="bottom" secondItem="VDa-Rh-llU" secondAttribute="bottom" constant="12" id="Fwy-9n-N1m"/>
+                    <constraint firstAttribute="bottom" secondItem="AtR-c4-ZzN" secondAttribute="bottom" constant="12" id="Iaf-in-F16"/>
+                    <constraint firstItem="VDa-Rh-llU" firstAttribute="top" secondItem="9nC-Cv-LA6" secondAttribute="top" constant="12" id="O1j-df-vhT"/>
+                    <constraint firstItem="VDa-Rh-llU" firstAttribute="top" secondItem="9nC-Cv-LA6" secondAttribute="top" constant="12" id="a1n-9X-d8q"/>
+                    <constraint firstAttribute="bottom" secondItem="VDa-Rh-llU" secondAttribute="bottom" constant="12" id="c3A-z0-RiZ"/>
+                    <constraint firstItem="AtR-c4-ZzN" firstAttribute="top" secondItem="9nC-Cv-LA6" secondAttribute="top" constant="12" id="lg8-1b-6NF"/>
+                    <constraint firstItem="VDa-Rh-llU" firstAttribute="leading" secondItem="9nC-Cv-LA6" secondAttribute="leading" constant="16" id="nco-V0-jb4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="RightTableViewLabel" destination="VDa-Rh-llU" id="GVQ-Cf-L9a"/>
+                <outlet property="RightTableViewNew" destination="AtR-c4-ZzN" id="qG0-bc-s4s"/>
+            </connections>
+            <point key="canvasLocation" x="526.81159420289862" y="-230.35714285714283"/>
+        </tableViewCell>
+    </objects>
+</document>

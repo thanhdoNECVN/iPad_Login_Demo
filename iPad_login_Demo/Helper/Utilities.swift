@@ -29,4 +29,9 @@ class Utilities {
         view2.backgroundColor = UIColor.systemGray2
         view3.backgroundColor = UIColor.systemGray2
     }
+    
+    static func styleView(_ view: UIView, radius: Int){
+        view.layer.cornerRadius = CGFloat(radius)
+        view.layer.masksToBounds = true
+    }
 }

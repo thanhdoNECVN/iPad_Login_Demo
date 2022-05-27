@@ -7,37 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */; };
+		DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */; };
+		DF743BEC283CE9280011447C /* SubLeftMenu_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */; };
+		DF743BEF283E37650011447C /* BottomLeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BED283E37650011447C /* BottomLeftViewController.swift */; };
+		DF743BF0283E37650011447C /* BottomLeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743BEE283E37650011447C /* BottomLeftViewController.xib */; };
+		DF743BF3283F28AB0011447C /* SubRightTabeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BF1283F28AB0011447C /* SubRightTabeViewController.swift */; };
+		DF743BF4283F28AB0011447C /* SubRightTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743BF2283F28AB0011447C /* SubRightTableViewController.xib */; };
+		DF743BF7283F34B20011447C /* RightViewOfRightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BF5283F34B20011447C /* RightViewOfRightViewController.swift */; };
+		DF743BF8283F34B20011447C /* RightViewOfRightViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743BF6283F34B20011447C /* RightViewOfRightViewController.xib */; };
+		DF743C0F283F891B0011447C /* leftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743C0D283F891B0011447C /* leftTableViewCell.swift */; };
+		DF743C10283F891B0011447C /* leftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743C0E283F891B0011447C /* leftTableViewCell.xib */; };
 		DFE5E910282D71160030449A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E90F282D71160030449A /* AppDelegate.swift */; };
 		DFE5E912282D71160030449A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E911282D71160030449A /* SceneDelegate.swift */; };
 		DFE5E914282D71160030449A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E913282D71160030449A /* ViewController.swift */; };
-		DFE5E917282D71160030449A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E915282D71160030449A /* Main.storyboard */; };
 		DFE5E919282D71170030449A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E918282D71170030449A /* Assets.xcassets */; };
 		DFE5E91C282D71170030449A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E91A282D71170030449A /* LaunchScreen.storyboard */; };
 		DFE5E925282D73460030449A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E924282D73460030449A /* LoginViewController.swift */; };
-		DFE5E92728327C4B0030449A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E92628327C4B0030449A /* HomeViewController.swift */; };
 		DFE5E92C283287D00030449A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E92B283287D00030449A /* Utilities.swift */; };
-		DFE5E92F283382DD0030449A /* LeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E92E283382DD0030449A /* LeftTableViewCell.swift */; };
-		DFE5E931283387050030449A /* leftTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E930283387050030449A /* leftTBV.swift */; };
-		DFE5E9332833CEB60030449A /* RightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E9322833CEB60030449A /* RightTableViewCell.swift */; };
-		DFE5E9352833E19D0030449A /* rightTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E9342833E19D0030449A /* rightTBV.swift */; };
+		DFE5E92F283382DD0030449A /* RightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E92E283382DD0030449A /* RightTableViewCell.swift */; };
+		DFE5E931283387050030449A /* rightTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E930283387050030449A /* rightTBV.swift */; };
+		DFE5E9352833E19D0030449A /* leftTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E9342833E19D0030449A /* leftTBV.swift */; };
+		DFE5E93C283B318E0030449A /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E93B283B318E0030449A /* LoginViewController.xib */; };
+		DFE5E93F283B33470030449A /* OrderMenuHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E93E283B33470030449A /* OrderMenuHeader.xib */; };
+		DFE5E941283B33D90030449A /* OrderMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E940283B33D90030449A /* OrderMenuViewController.xib */; };
+		DFE5E94C283B4E5E0030449A /* RightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE5E94B283B4E5E0030449A /* RightTableViewCell.xib */; };
+		DFE5E989283C838E0030449A /* CustomeNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E988283C838E0030449A /* CustomeNibView.swift */; };
+		DFE5E98B283C86810030449A /* OrderMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E98A283C86810030449A /* OrderMenuViewController.swift */; };
+		DFE5E998283CB8400030449A /* OrderMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E997283CB8400030449A /* OrderMenuHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubLeftMenu_ViewController.swift; sourceTree = "<group>"; };
+		DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubLeftMenu_ViewController.xib; sourceTree = "<group>"; };
+		DF743BED283E37650011447C /* BottomLeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomLeftViewController.swift; sourceTree = "<group>"; };
+		DF743BEE283E37650011447C /* BottomLeftViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomLeftViewController.xib; sourceTree = "<group>"; };
+		DF743BF1283F28AB0011447C /* SubRightTabeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubRightTabeViewController.swift; sourceTree = "<group>"; };
+		DF743BF2283F28AB0011447C /* SubRightTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubRightTableViewController.xib; sourceTree = "<group>"; };
+		DF743BF5283F34B20011447C /* RightViewOfRightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewOfRightViewController.swift; sourceTree = "<group>"; };
+		DF743BF6283F34B20011447C /* RightViewOfRightViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightViewOfRightViewController.xib; sourceTree = "<group>"; };
+		DF743C0D283F891B0011447C /* leftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftTableViewCell.swift; sourceTree = "<group>"; };
+		DF743C0E283F891B0011447C /* leftTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = leftTableViewCell.xib; sourceTree = "<group>"; };
 		DFE5E90C282D71160030449A /* iPad_login_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_login_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5E90F282D71160030449A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE5E911282D71160030449A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DFE5E913282D71160030449A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DFE5E916282D71160030449A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DFE5E918282D71170030449A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFE5E91B282D71170030449A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DFE5E91D282D71170030449A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFE5E924282D73460030449A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		DFE5E92628327C4B0030449A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		DFE5E92B283287D00030449A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		DFE5E92E283382DD0030449A /* LeftTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTableViewCell.swift; sourceTree = "<group>"; };
-		DFE5E930283387050030449A /* leftTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftTBV.swift; sourceTree = "<group>"; };
-		DFE5E9322833CEB60030449A /* RightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTableViewCell.swift; sourceTree = "<group>"; };
-		DFE5E9342833E19D0030449A /* rightTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightTBV.swift; sourceTree = "<group>"; };
+		DFE5E92E283382DD0030449A /* RightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightTableViewCell.swift; sourceTree = "<group>"; };
+		DFE5E930283387050030449A /* rightTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rightTBV.swift; sourceTree = "<group>"; };
+		DFE5E9342833E19D0030449A /* leftTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leftTBV.swift; sourceTree = "<group>"; };
+		DFE5E93B283B318E0030449A /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DFE5E93E283B33470030449A /* OrderMenuHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderMenuHeader.xib; sourceTree = "<group>"; };
+		DFE5E940283B33D90030449A /* OrderMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderMenuViewController.xib; sourceTree = "<group>"; };
+		DFE5E94B283B4E5E0030449A /* RightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightTableViewCell.xib; sourceTree = "<group>"; };
+		DFE5E988283C838E0030449A /* CustomeNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeNibView.swift; sourceTree = "<group>"; };
+		DFE5E98A283C86810030449A /* OrderMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuViewController.swift; sourceTree = "<group>"; };
+		DFE5E997283CB8400030449A /* OrderMenuHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderMenuHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +103,8 @@
 				DFE5E90F282D71160030449A /* AppDelegate.swift */,
 				DFE5E911282D71160030449A /* SceneDelegate.swift */,
 				DFE5E92D2833827E0030449A /* Table View Cell */,
+				DFE5E936283B2ECD0030449A /* UI */,
 				DFE5E92A283287B50030449A /* Helper */,
-				DFE5E923282D73210030449A /* View Controller */,
-				DFE5E915282D71160030449A /* Main.storyboard */,
 				DFE5E918282D71170030449A /* Assets.xcassets */,
 				DFE5E91A282D71170030449A /* LaunchScreen.storyboard */,
 				DFE5E91D282D71170030449A /* Info.plist */,
@@ -83,20 +112,21 @@
 			path = iPad_login_Demo;
 			sourceTree = "<group>";
 		};
-		DFE5E923282D73210030449A /* View Controller */ = {
+		DFE5E923282D73210030449A /* 02.ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				DFE5E985283C82F40030449A /* 00.Login */,
+				DFE5E986283C83110030449A /* 01.OrderMenu */,
 				DFE5E913282D71160030449A /* ViewController.swift */,
-				DFE5E924282D73460030449A /* LoginViewController.swift */,
-				DFE5E92628327C4B0030449A /* HomeViewController.swift */,
 			);
-			path = "View Controller";
+			path = 02.ViewController;
 			sourceTree = "<group>";
 		};
 		DFE5E92A283287B50030449A /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				DFE5E92B283287D00030449A /* Utilities.swift */,
+				DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -104,12 +134,115 @@
 		DFE5E92D2833827E0030449A /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
-				DFE5E930283387050030449A /* leftTBV.swift */,
-				DFE5E92E283382DD0030449A /* LeftTableViewCell.swift */,
-				DFE5E9322833CEB60030449A /* RightTableViewCell.swift */,
-				DFE5E9342833E19D0030449A /* rightTBV.swift */,
+				DFE5E930283387050030449A /* rightTBV.swift */,
+				DFE5E92E283382DD0030449A /* RightTableViewCell.swift */,
+				DFE5E9342833E19D0030449A /* leftTBV.swift */,
+				DF743C0D283F891B0011447C /* leftTableViewCell.swift */,
 			);
 			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		DFE5E936283B2ECD0030449A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E93A283B30960030449A /* 00.LoginScreen */,
+				DFE5E939283B2F850030449A /* 01.Storyboards */,
+				DFE5E923282D73210030449A /* 02.ViewController */,
+				DFE5E987283C834D0030449A /* 03.UIparts */,
+				DFE5E996283CB7A30030449A /* 04.Header */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		DFE5E939283B2F850030449A /* 01.Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E93D283B331D0030449A /* 01.OderMenu */,
+			);
+			path = 01.Storyboards;
+			sourceTree = "<group>";
+		};
+		DFE5E93A283B30960030449A /* 00.LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E93B283B318E0030449A /* LoginViewController.xib */,
+			);
+			path = 00.LoginScreen;
+			sourceTree = "<group>";
+		};
+		DFE5E93D283B331D0030449A /* 01.OderMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E94E283B5DC90030449A /* RightView */,
+				DFE5E94D283B5DBE0030449A /* LeftView */,
+				DFE5E948283B44D90030449A /* Cells */,
+				DFE5E940283B33D90030449A /* OrderMenuViewController.xib */,
+				DFE5E93E283B33470030449A /* OrderMenuHeader.xib */,
+			);
+			path = 01.OderMenu;
+			sourceTree = "<group>";
+		};
+		DFE5E948283B44D90030449A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E94B283B4E5E0030449A /* RightTableViewCell.xib */,
+				DF743C0E283F891B0011447C /* leftTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		DFE5E94D283B5DBE0030449A /* LeftView */ = {
+			isa = PBXGroup;
+			children = (
+				DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */,
+				DF743BEE283E37650011447C /* BottomLeftViewController.xib */,
+			);
+			path = LeftView;
+			sourceTree = "<group>";
+		};
+		DFE5E94E283B5DC90030449A /* RightView */ = {
+			isa = PBXGroup;
+			children = (
+				DF743BF2283F28AB0011447C /* SubRightTableViewController.xib */,
+				DF743BF6283F34B20011447C /* RightViewOfRightViewController.xib */,
+			);
+			path = RightView;
+			sourceTree = "<group>";
+		};
+		DFE5E985283C82F40030449A /* 00.Login */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E924282D73460030449A /* LoginViewController.swift */,
+			);
+			path = 00.Login;
+			sourceTree = "<group>";
+		};
+		DFE5E986283C83110030449A /* 01.OrderMenu */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E98A283C86810030449A /* OrderMenuViewController.swift */,
+				DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */,
+				DF743BED283E37650011447C /* BottomLeftViewController.swift */,
+				DF743BF1283F28AB0011447C /* SubRightTabeViewController.swift */,
+				DF743BF5283F34B20011447C /* RightViewOfRightViewController.swift */,
+			);
+			path = 01.OrderMenu;
+			sourceTree = "<group>";
+		};
+		DFE5E987283C834D0030449A /* 03.UIparts */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E988283C838E0030449A /* CustomeNibView.swift */,
+			);
+			path = 03.UIparts;
+			sourceTree = "<group>";
+		};
+		DFE5E996283CB7A30030449A /* 04.Header */ = {
+			isa = PBXGroup;
+			children = (
+				DFE5E997283CB8400030449A /* OrderMenuHeader.swift */,
+			);
+			path = 04.Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,9 +303,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFE5E94C283B4E5E0030449A /* RightTableViewCell.xib in Resources */,
+				DF743BF4283F28AB0011447C /* SubRightTableViewController.xib in Resources */,
+				DF743C10283F891B0011447C /* leftTableViewCell.xib in Resources */,
+				DFE5E93F283B33470030449A /* OrderMenuHeader.xib in Resources */,
+				DFE5E93C283B318E0030449A /* LoginViewController.xib in Resources */,
+				DF743BF8283F34B20011447C /* RightViewOfRightViewController.xib in Resources */,
 				DFE5E91C282D71170030449A /* LaunchScreen.storyboard in Resources */,
+				DF743BEC283CE9280011447C /* SubLeftMenu_ViewController.xib in Resources */,
 				DFE5E919282D71170030449A /* Assets.xcassets in Resources */,
-				DFE5E917282D71160030449A /* Main.storyboard in Resources */,
+				DF743BF0283E37650011447C /* BottomLeftViewController.xib in Resources */,
+				DFE5E941283B33D90030449A /* OrderMenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,29 +325,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE5E92C283287D00030449A /* Utilities.swift in Sources */,
-				DFE5E9352833E19D0030449A /* rightTBV.swift in Sources */,
-				DFE5E92728327C4B0030449A /* HomeViewController.swift in Sources */,
-				DFE5E9332833CEB60030449A /* RightTableViewCell.swift in Sources */,
+				DFE5E9352833E19D0030449A /* leftTBV.swift in Sources */,
+				DF743BF7283F34B20011447C /* RightViewOfRightViewController.swift in Sources */,
+				DF743BEF283E37650011447C /* BottomLeftViewController.swift in Sources */,
+				DFE5E998283CB8400030449A /* OrderMenuHeader.swift in Sources */,
+				DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */,
+				DFE5E98B283C86810030449A /* OrderMenuViewController.swift in Sources */,
+				DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */,
 				DFE5E925282D73460030449A /* LoginViewController.swift in Sources */,
 				DFE5E914282D71160030449A /* ViewController.swift in Sources */,
 				DFE5E910282D71160030449A /* AppDelegate.swift in Sources */,
-				DFE5E92F283382DD0030449A /* LeftTableViewCell.swift in Sources */,
+				DFE5E92F283382DD0030449A /* RightTableViewCell.swift in Sources */,
+				DF743BF3283F28AB0011447C /* SubRightTabeViewController.swift in Sources */,
 				DFE5E912282D71160030449A /* SceneDelegate.swift in Sources */,
-				DFE5E931283387050030449A /* leftTBV.swift in Sources */,
+				DF743C0F283F891B0011447C /* leftTableViewCell.swift in Sources */,
+				DFE5E989283C838E0030449A /* CustomeNibView.swift in Sources */,
+				DFE5E931283387050030449A /* rightTBV.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DFE5E915282D71160030449A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DFE5E916282D71160030449A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DFE5E91A282D71170030449A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,8 +486,8 @@
 				INFOPLIST_FILE = iPad_login_Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,8 +515,8 @@
 				INFOPLIST_FILE = iPad_login_Demo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (

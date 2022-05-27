@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomLeftViewController" customModule="iPad_login_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="c0K-Um-b93" id="mFc-Rr-VPN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <stackView opaque="NO" contentMode="scaleToFill" spacing="20" id="c0K-Um-b93">
+            <rect key="frame" x="0.0" y="0.0" width="519" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pfc-Yh-T4X">
+                    <rect key="frame" x="0.0" y="0.0" width="209" height="137"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jeo-Ud-Qpp">
+                            <rect key="frame" x="0.0" y="0.0" width="209" height="36"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_6" translatesAutoresizingMaskIntoConstraints="NO" id="AmB-0V-Pum">
+                                    <rect key="frame" x="0.0" y="0.0" width="209" height="36"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店舖連絡情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54P-Gf-GEZ">
+                                    <rect key="frame" x="8" y="0.0" width="104" height="36"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="AmB-0V-Pum" firstAttribute="top" secondItem="54P-Gf-GEZ" secondAttribute="top" id="9D6-XG-spW"/>
+                                <constraint firstAttribute="bottom" secondItem="AmB-0V-Pum" secondAttribute="bottom" id="DCp-hI-oEg"/>
+                                <constraint firstItem="AmB-0V-Pum" firstAttribute="top" secondItem="Jeo-Ud-Qpp" secondAttribute="top" id="Evv-Km-zuD"/>
+                                <constraint firstItem="AmB-0V-Pum" firstAttribute="top" secondItem="Jeo-Ud-Qpp" secondAttribute="top" id="Ezj-E5-KpI"/>
+                                <constraint firstAttribute="bottom" secondItem="AmB-0V-Pum" secondAttribute="bottom" id="MQR-xf-1VO"/>
+                                <constraint firstItem="AmB-0V-Pum" firstAttribute="bottom" secondItem="54P-Gf-GEZ" secondAttribute="bottom" id="Siz-o0-O30"/>
+                                <constraint firstAttribute="height" constant="36" id="fk5-9v-GJg"/>
+                                <constraint firstItem="AmB-0V-Pum" firstAttribute="leading" secondItem="Jeo-Ud-Qpp" secondAttribute="leading" id="jj0-kC-vFa"/>
+                                <constraint firstItem="54P-Gf-GEZ" firstAttribute="leading" secondItem="Jeo-Ud-Qpp" secondAttribute="leadingMargin" id="nJ4-Zr-kzl"/>
+                                <constraint firstAttribute="trailing" secondItem="AmB-0V-Pum" secondAttribute="trailing" id="w9a-kp-PQL"/>
+                                <constraint firstItem="AmB-0V-Pum" firstAttribute="leading" secondItem="Jeo-Ud-Qpp" secondAttribute="leading" id="y3E-LX-ujc"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="a0d-sc-76I">
+                            <rect key="frame" x="0.0" y="36" width="209" height="101"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <string key="text">日別店別連絡（店舖）の 卜
+表示忑志去少。店舖=0001『成城
+店                』言業日付=2022年
+038028</string>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="a0d-sc-76I" firstAttribute="top" secondItem="Jeo-Ud-Qpp" secondAttribute="bottom" id="80n-46-Rfy"/>
+                        <constraint firstItem="a0d-sc-76I" firstAttribute="top" secondItem="Jeo-Ud-Qpp" secondAttribute="bottom" id="8wL-cI-eQa"/>
+                        <constraint firstItem="a0d-sc-76I" firstAttribute="leading" secondItem="pfc-Yh-T4X" secondAttribute="leading" id="SH7-XR-bG5"/>
+                        <constraint firstAttribute="trailing" secondItem="Jeo-Ud-Qpp" secondAttribute="trailing" id="SiP-yJ-t2T"/>
+                        <constraint firstItem="Jeo-Ud-Qpp" firstAttribute="leading" secondItem="pfc-Yh-T4X" secondAttribute="leading" id="WGE-HJ-6SL"/>
+                        <constraint firstAttribute="trailing" secondItem="a0d-sc-76I" secondAttribute="trailing" id="Y2k-tp-SIu"/>
+                        <constraint firstItem="Jeo-Ud-Qpp" firstAttribute="top" secondItem="pfc-Yh-T4X" secondAttribute="top" id="g65-VL-379"/>
+                        <constraint firstAttribute="bottom" secondItem="a0d-sc-76I" secondAttribute="bottom" id="iFq-TM-UMk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qly-Zc-PQ7">
+                    <rect key="frame" x="229" y="0.0" width="290" height="137"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJq-qC-r3m">
+                            <rect key="frame" x="0.0" y="0.0" width="290" height="36"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_6" translatesAutoresizingMaskIntoConstraints="NO" id="1cF-CM-jvN">
+                                    <rect key="frame" x="0.0" y="0.0" width="290" height="36"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="店舖連絡情報" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPR-pz-MZ6">
+                                    <rect key="frame" x="8" y="0.0" width="110" height="36"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="110" id="Ne7-Kf-XzM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="PPR-pz-MZ6" firstAttribute="top" secondItem="1cF-CM-jvN" secondAttribute="top" id="05N-oL-PeL"/>
+                                <constraint firstItem="1cF-CM-jvN" firstAttribute="leading" secondItem="WJq-qC-r3m" secondAttribute="leading" id="6Ms-35-paN"/>
+                                <constraint firstAttribute="trailing" secondItem="1cF-CM-jvN" secondAttribute="trailing" id="AYb-P0-MQ3"/>
+                                <constraint firstItem="PPR-pz-MZ6" firstAttribute="bottom" secondItem="1cF-CM-jvN" secondAttribute="bottom" id="JoA-yl-Ghw"/>
+                                <constraint firstItem="PPR-pz-MZ6" firstAttribute="leading" secondItem="WJq-qC-r3m" secondAttribute="leadingMargin" id="TmT-K1-hvY"/>
+                                <constraint firstItem="1cF-CM-jvN" firstAttribute="top" secondItem="WJq-qC-r3m" secondAttribute="top" id="aJU-mM-krg"/>
+                                <constraint firstAttribute="height" constant="36" id="jcR-Mq-8La"/>
+                                <constraint firstAttribute="bottom" secondItem="1cF-CM-jvN" secondAttribute="bottom" id="uWF-cE-jiC"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WT8-fx-hbO">
+                            <rect key="frame" x="0.0" y="36" width="290" height="101"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <string key="text">日別店別連絡（店舖）の 卜
+表示忑志去少。店舖=0001『成城
+店                』言業日付=2022年
+038028</string>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="WT8-fx-hbO" secondAttribute="bottom" id="88E-80-94D"/>
+                        <constraint firstItem="WT8-fx-hbO" firstAttribute="top" secondItem="WJq-qC-r3m" secondAttribute="bottom" id="9Hz-M1-oVf"/>
+                        <constraint firstItem="WJq-qC-r3m" firstAttribute="leading" secondItem="qly-Zc-PQ7" secondAttribute="leading" id="DKj-0G-Nab"/>
+                        <constraint firstItem="WT8-fx-hbO" firstAttribute="leading" secondItem="qly-Zc-PQ7" secondAttribute="leading" id="VqT-uR-Suq"/>
+                        <constraint firstAttribute="trailing" secondItem="WT8-fx-hbO" secondAttribute="trailing" id="tk2-vT-e3i"/>
+                        <constraint firstItem="WJq-qC-r3m" firstAttribute="top" secondItem="qly-Zc-PQ7" secondAttribute="top" id="wXF-jy-CNK"/>
+                        <constraint firstAttribute="trailing" secondItem="WJq-qC-r3m" secondAttribute="trailing" id="yIj-cD-2ZM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="O7a-Wk-Qie"/>
+            <constraints>
+                <constraint firstItem="pfc-Yh-T4X" firstAttribute="leading" secondItem="O7a-Wk-Qie" secondAttribute="leading" id="8Df-x9-xkd"/>
+                <constraint firstItem="pfc-Yh-T4X" firstAttribute="bottom" secondItem="O7a-Wk-Qie" secondAttribute="bottom" id="Aen-OQ-8fn"/>
+                <constraint firstItem="pfc-Yh-T4X" firstAttribute="top" secondItem="c0K-Um-b93" secondAttribute="top" id="VAE-1q-fAu"/>
+                <constraint firstAttribute="trailing" secondItem="qly-Zc-PQ7" secondAttribute="trailing" id="XgR-Yb-Lvv"/>
+                <constraint firstAttribute="bottom" secondItem="qly-Zc-PQ7" secondAttribute="bottom" id="ai2-0K-1EF"/>
+                <constraint firstItem="pfc-Yh-T4X" firstAttribute="leading" secondItem="O7a-Wk-Qie" secondAttribute="leading" id="hfY-Es-fdR"/>
+                <constraint firstItem="qly-Zc-PQ7" firstAttribute="top" secondItem="c0K-Um-b93" secondAttribute="top" id="jXR-2D-may"/>
+                <constraint firstItem="pfc-Yh-T4X" firstAttribute="bottom" secondItem="O7a-Wk-Qie" secondAttribute="bottom" id="qp3-dd-NB3"/>
+                <constraint firstAttribute="trailing" secondItem="pfc-Yh-T4X" secondAttribute="trailing" constant="310" id="wDM-5M-9kC"/>
+                <constraint firstItem="pfc-Yh-T4X" firstAttribute="top" secondItem="c0K-Um-b93" secondAttribute="top" id="yrm-7f-OQP"/>
+            </constraints>
+            <point key="canvasLocation" x="-449.12109374999994" y="271.484375"/>
+        </stackView>
+    </objects>
+    <resources>
+        <image name="background_6" width="516" height="41"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
