@@ -34,4 +34,22 @@ class Utilities {
         view.layer.cornerRadius = CGFloat(radius)
         view.layer.masksToBounds = true
     }
+    
+    static func styleLabel(_ label: UILabel, radius: Int){
+        label.layer.cornerRadius = CGFloat(radius)
+        label.layer.masksToBounds = true
+    }
+    static func colorCell(cell: UITableViewCell ,index: Int){
+        if(index % 2 == 0){
+            cell.backgroundColor = UIColor.systemGray6
+        } else{
+            cell.backgroundColor = UIColor.systemGray5
+        }
+    }
+    
+    static func formatCellBackroundOnClick(cell: UITableViewCell){
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(red: 44/255.0, green: 105/255.0, blue: 156/255.0, alpha: 1)
+        cell.selectedBackgroundView = backgroundView
+    }
 }

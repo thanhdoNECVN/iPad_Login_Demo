@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OrderMenuViewController: UIViewController {
+class OrderMenuViewController: BaseViewController{
         
     @IBOutlet weak var subLeftMenuViewContainer: UIView!
     private lazy var subLeftMenuController = SubLeftMenu_ViewController()
@@ -34,6 +34,7 @@ class OrderMenuViewController: UIViewController {
     
     func setupChildren(){
         
+        headerView.configure(with: .orderMenu)
         install(subLeftMenuController, toContainerView: subLeftMenuViewContainer)
         install(leftBottomController, toContainerView: leftBottomViewContainer)
         install(subRightMenuController, toContainerView: subRightMenuViewContainer)

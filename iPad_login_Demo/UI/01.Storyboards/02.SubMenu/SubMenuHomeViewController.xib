@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubMenuHomeViewController" customModule="iPad_login_Demo" customModuleProvider="target">
+            <connections>
+                <outlet property="headerView" destination="7Tu-s7-uwe" id="XeP-a2-Xt7"/>
+                <outlet property="leftViewContainer" destination="KDX-iU-uPr" id="2qJ-AL-TkU"/>
+                <outlet property="rightViewContainer" destination="iQu-h6-LzN" id="4oq-bT-3sy"/>
+                <outlet property="view" destination="xMi-Lm-Tnz" id="rUy-tT-BpX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xMi-Lm-Tnz">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Tu-s7-uwe" userLabel="Header View" customClass="Header" customModule="iPad_login_Demo" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="64"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0039215688589999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="2Ig-0U-fGf"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_1" translatesAutoresizingMaskIntoConstraints="NO" id="4OS-eN-hQD" userLabel="Background View">
+                    <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDX-iU-uPr" userLabel="SubMenuLeftContainer">
+                    <rect key="frame" x="15" y="79" width="460" height="674"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQu-h6-LzN" userLabel="SubMenuRightContainer">
+                    <rect key="frame" x="490" y="79" width="519" height="674"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="2WP-tj-Acw"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iQu-h6-LzN" secondAttribute="trailing" constant="15" id="0lw-Ay-N9E"/>
+                <constraint firstAttribute="bottomMargin" secondItem="4OS-eN-hQD" secondAttribute="bottom" id="5Hs-nO-LJd"/>
+                <constraint firstItem="7Tu-s7-uwe" firstAttribute="top" secondItem="xMi-Lm-Tnz" secondAttribute="top" id="7e7-Bf-cvp"/>
+                <constraint firstItem="4OS-eN-hQD" firstAttribute="top" secondItem="7Tu-s7-uwe" secondAttribute="bottom" id="BC3-2U-Gjd"/>
+                <constraint firstItem="2WP-tj-Acw" firstAttribute="trailing" secondItem="4OS-eN-hQD" secondAttribute="trailing" id="Cmo-eT-2TE"/>
+                <constraint firstAttribute="trailing" secondItem="KDX-iU-uPr" secondAttribute="trailing" constant="549" id="F6I-pC-B6L"/>
+                <constraint firstItem="iQu-h6-LzN" firstAttribute="leading" secondItem="KDX-iU-uPr" secondAttribute="trailing" constant="15" id="LW6-1s-VQ8"/>
+                <constraint firstItem="KDX-iU-uPr" firstAttribute="top" secondItem="7Tu-s7-uwe" secondAttribute="bottom" constant="15" id="cVf-nh-9z7"/>
+                <constraint firstItem="4OS-eN-hQD" firstAttribute="leading" secondItem="2WP-tj-Acw" secondAttribute="leading" id="gMl-Zu-t4q"/>
+                <constraint firstItem="iQu-h6-LzN" firstAttribute="top" secondItem="7Tu-s7-uwe" secondAttribute="bottom" constant="15" id="gv9-31-9LC"/>
+                <constraint firstItem="2WP-tj-Acw" firstAttribute="bottom" secondItem="KDX-iU-uPr" secondAttribute="bottom" constant="15" id="k7n-fn-BCs"/>
+                <constraint firstAttribute="trailing" secondItem="7Tu-s7-uwe" secondAttribute="trailing" id="khT-At-TMO"/>
+                <constraint firstItem="7Tu-s7-uwe" firstAttribute="leading" secondItem="xMi-Lm-Tnz" secondAttribute="leading" id="nyP-XN-yaW"/>
+                <constraint firstAttribute="bottom" secondItem="iQu-h6-LzN" secondAttribute="bottom" constant="15" id="qCA-pv-5EE"/>
+                <constraint firstItem="KDX-iU-uPr" firstAttribute="leading" secondItem="2WP-tj-Acw" secondAttribute="leading" constant="15" id="qDs-s4-KId"/>
+            </constraints>
+            <point key="canvasLocation" x="163.4765625" y="197.65625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_1" width="1024" height="768"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
