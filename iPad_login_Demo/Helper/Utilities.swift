@@ -52,4 +52,8 @@ class Utilities {
         backgroundView.backgroundColor = UIColor(red: 44/255.0, green: 105/255.0, blue: 156/255.0, alpha: 1)
         cell.selectedBackgroundView = backgroundView
     }
+    static func splitDate(edit_date: String, index: Int) -> String{
+        let splitedString = edit_date.components(separatedBy:["(",")"])
+        return splitedString[index]
+    }
 }

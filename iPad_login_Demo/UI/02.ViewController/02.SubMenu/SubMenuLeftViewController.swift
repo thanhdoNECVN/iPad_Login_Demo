@@ -17,7 +17,7 @@ class SubMenuLeftViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var rightTotalNumber: UILabel!
     @IBOutlet weak var rightTableView: UITableView!
     var leftData = ["ダザト","ダザト","ダザト"]
-    var rightData = ["010011","010","010071","016","017001","017","017021","064","064611","064","064681","90001","010011","010011"]
+    var rightData = ["010011","010","010071","016","017001","017","017021","064","064611","064","064681","90001","010011","010011","010011","010011","010011","010011","010011","010011","010011","010011","010011","010011"]
     
     
     
@@ -94,14 +94,16 @@ class SubMenuLeftViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         if tableView == leftTableView{
-            let leftCell = tableView.cellForRow(at: indexPath) as! SubMenuLeft_LeftCell
-            leftCell.leftLabel.textColor = .black
-            Utilities.colorCell(cell: leftCell, index: indexPath.row)
+            if let leftCell = tableView.cellForRow(at: indexPath) as? SubMenuLeft_LeftCell{
+                leftCell.leftLabel.textColor = .black
+                Utilities.colorCell(cell: leftCell, index: indexPath.row)
+            }
         }
         else{
-            let rightCell = tableView.cellForRow(at: indexPath) as! SubMenuLeft_RightCell
-            rightCell.rightLabel.textColor = .black
-            Utilities.colorCell(cell: rightCell, index: indexPath.row)
+            if let rightCell = tableView.cellForRow(at: indexPath) as? SubMenuLeft_RightCell{
+                rightCell.rightLabel.textColor = .black
+                Utilities.colorCell(cell: rightCell, index: indexPath.row)
+            }
         }
     }
     

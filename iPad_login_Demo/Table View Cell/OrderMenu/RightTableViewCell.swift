@@ -15,10 +15,19 @@ class RightTableViewCell: UITableViewCell {
     
     let cornerRadius = 10.0
     
-    func setRightCell(rightCell: RightTBV){
-        RightTableViewLabel.text = rightCell.label
-        RightTableViewNew.isHidden = rightCell.hiden
+    func setRightCell(rightCell: RightOrderMenuModel){
+        RightTableViewLabel.text = rightCell.sect_code
+        RightTableViewNew.isHidden = checkHiddenView(code: rightCell.new_plan)
         RightTableViewNew.layer.masksToBounds = true
         RightTableViewNew.layer.cornerRadius = cornerRadius
+    }
+    
+    func checkHiddenView(code: String) -> Bool{
+        if code == "0"{
+            return false
+        }
+        else{
+            return true
+        }
     }
 }

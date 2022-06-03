@@ -34,6 +34,7 @@
 		DF743C422846021E0011447C /* SubMenuRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743C402846021E0011447C /* SubMenuRightTableViewCell.swift */; };
 		DF743C432846021E0011447C /* SubMenuRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743C412846021E0011447C /* SubMenuRightTableViewCell.xib */; };
 		DF743C4528460EC50011447C /* subMenuTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743C4428460EC50011447C /* subMenuTBV.swift */; };
+		DFDF9F732848A12600153359 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF9F722848A12600153359 /* models.swift */; };
 		DFE5E910282D71160030449A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E90F282D71160030449A /* AppDelegate.swift */; };
 		DFE5E912282D71160030449A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E911282D71160030449A /* SceneDelegate.swift */; };
 		DFE5E914282D71160030449A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E913282D71160030449A /* ViewController.swift */; };
@@ -80,6 +81,7 @@
 		DF743C402846021E0011447C /* SubMenuRightTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubMenuRightTableViewCell.swift; sourceTree = "<group>"; };
 		DF743C412846021E0011447C /* SubMenuRightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuRightTableViewCell.xib; sourceTree = "<group>"; };
 		DF743C4428460EC50011447C /* subMenuTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subMenuTBV.swift; sourceTree = "<group>"; };
+		DFDF9F722848A12600153359 /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
 		DFE5E90C282D71160030449A /* iPad_login_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_login_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5E90F282D71160030449A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE5E911282D71160030449A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -172,6 +174,14 @@
 			path = SubMenu;
 			sourceTree = "<group>";
 		};
+		DFDF9F712848A11000153359 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DFDF9F722848A12600153359 /* models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DFE5E903282D71160030449A = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +201,7 @@
 		DFE5E90E282D71160030449A /* iPad_login_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DFDF9F712848A11000153359 /* Models */,
 				DF743C1C2842590A0011447C /* Contanst */,
 				DFE5E90F282D71160030449A /* AppDelegate.swift */,
 				DFE5E911282D71160030449A /* SceneDelegate.swift */,
@@ -433,6 +444,7 @@
 				DF743C2028425B170011447C /* BaseViewController.swift in Sources */,
 				DFE5E998283CB8400030449A /* Header.swift in Sources */,
 				DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */,
+				DFDF9F732848A12600153359 /* models.swift in Sources */,
 				DFE5E98B283C86810030449A /* OrderMenuViewController.swift in Sources */,
 				DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */,
 				DFE5E925282D73460030449A /* LoginViewController.swift in Sources */,

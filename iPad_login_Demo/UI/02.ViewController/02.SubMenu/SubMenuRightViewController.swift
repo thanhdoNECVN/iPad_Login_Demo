@@ -22,19 +22,39 @@ class SubMenuRightViewController: UIViewController, UITableViewDelegate, UITable
     
     @IBOutlet weak var centerView: UIView!
     @IBOutlet weak var rightSubTableView: UITableView!
-    var data: [subMenuTBV] = []
+    var data = [RightSubMenuModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElement()
-        data = createData()
         
         rightSubTableView.delegate = self
         rightSubTableView.dataSource = self
         
         rightSubTableView.register(UINib(nibName: "SubMenuRightTableViewCell", bundle: nil), forCellReuseIdentifier: "SubMenuRightTableViewCell")
         
+        Task{
+            let subRightMenuData = await getData(url: "http://127.0.0.1:8000/Sub_Menu")
+            self.data = subRightMenuData
+            
+            DispatchQueue.main.async {
+                self.rightSubTableView.reloadData()
+            }
+        }
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func getData(url: String) async -> [RightSubMenuModel]{
+        guard let url = URL(string: url) else { return[] }
+        
+        do{
+            let (data,_) = try await URLSession.shared.data(from: url)
+            let subMenu = try JSONDecoder().decode([RightSubMenuModel].self, from: data)
+            return subMenu
+        }catch{
+            return []
+        }
     }
 
     func setUpElement(){
@@ -92,6 +112,7 @@ class SubMenuRightViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SubMenuRightTableViewCell", for: indexPath) as! SubMenuRightTableViewCell
+        tableView.isScrollEnabled = false
         let data = data[indexPath.row]
         cell.setRightSubMenu(cell: data)
         
@@ -115,7 +136,6 @@ class SubMenuRightViewController: UIViewController, UITableViewDelegate, UITable
         if cell.daySim.text == "日"{
             cell.daySim.textColor = .red
         }
-        
         return cell
     }
 

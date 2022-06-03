@@ -22,16 +22,28 @@ class leftTableViewCell: UITableViewCell {
     @IBOutlet weak var personImage: UIImageView!
     
     
-    func setLeftCell(leftCell: LeftTBV){
-        dayNum.text = leftCell.dayNum
-        daySim.text = leftCell.daySim
-        image1.image = UIImage(systemName: leftCell.image1)
-        image2.image = UIImage(systemName: leftCell.image2)
-        highDegress.text = leftCell.highDegrees
-        lowDegrees.text = leftCell.lowDegress
-        numOfPeople.text = leftCell.numberOfPeople
+    func setLeftCell(leftCell: OrderMenuModel){
+        dayNum.text = splitDate(edit_date: leftCell.edit_date, index: 0)
+        daySim.text = splitDate(edit_date: leftCell.edit_date, index: 1)        //["05/02","今",""]
+        image1.image = UIImage(systemName: predict_image(img: leftCell.weather_morning))
+        image2.image = UIImage(systemName: predict_image(img: leftCell.weather_after))
+        highDegress.text = leftCell.temp_high + "°C"
+        lowDegrees.text = leftCell.temp_low + "°C"
+        numOfPeople.text = leftCell.guest_qty
         event.text = leftCell.event
         personImage.isHidden = false
     }
     
+    private func predict_image(img: String) -> String{
+        if img == "00"{
+            return "sun.max"
+        }else{
+            return "cloud.rain"
+        }
+    }
+    
+    private func splitDate(edit_date: String, index: Int) -> String{
+        let splitedString = edit_date.components(separatedBy:["(",")"])
+        return splitedString[index]
+    }
 }

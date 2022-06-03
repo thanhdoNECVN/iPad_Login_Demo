@@ -16,12 +16,12 @@ class SubMenuRightTableViewCell: UITableViewCell {
     @IBOutlet weak var numberOfOrders: UILabel!
     @IBOutlet weak var budget: UILabel!
     
-    func setRightSubMenu(cell: subMenuTBV){
-        daySim.text = cell.daySim
-        dayNum.text = cell.dayNum
-        price.text = cell.price
-        numberOfOrders.text = cell.numberOfOrders
-        budget.text = cell.budget
+    func setRightSubMenu(cell: RightSubMenuModel){
+        daySim.text = Utilities.splitDate(edit_date: cell.edit_date, index: 1)
+        dayNum.text = Utilities.splitDate(edit_date: cell.edit_date, index: 0)
+        price.text = cell.order_cost
+        numberOfOrders.text = cell.order_qty
+        budget.text = cell.plan_ratio
     }
     
 }

@@ -12,7 +12,7 @@
             <connections>
                 <outlet property="rightTableView" destination="4cH-Fo-viV" id="Zuk-A3-iKI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="lib-ny-823"/>
-                <outlet property="yelloView" destination="4cH-Fo-viV" id="SrA-L3-9u8"/>
+                <outlet property="yelloView" destination="NaV-Ct-BqH" id="poY-cz-quP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

@@ -13,15 +13,25 @@ class RightViewOfRightViewController: UIViewController {
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     
+    @IBOutlet weak var sect_name: UILabel!
+    @IBOutlet weak var centerView: UIView!
+    
+    var text : String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElement()
-        // Do any additional setup after loading the view.
     }
     func setUpElement(){
         Utilities.styleButton(ButtonNew, 10)
         Utilities.styleButton(button1, 5)
         Utilities.styleButton(button2, 5)
+//        if text.isEmpty{
+//            centerView.alpha = 0
+//        }else{
+//            centerView.alpha = 1
+//            sect_name.text = text
+//        }
+        
     }
 
     /*
