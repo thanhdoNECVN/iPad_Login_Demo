@@ -13,6 +13,7 @@ class SubRightTableViewController: UIViewController, UITableViewDataSource, UITa
     @IBOutlet weak var rightTableView: UITableView!
     
     var data = [RightOrderMenuModel]()
+    var selectedIndex = IndexPath(row: -1, section: 0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +28,7 @@ class SubRightTableViewController: UIViewController, UITableViewDataSource, UITa
         
         rightTableView.delegate = self
         rightTableView.dataSource = self
-//
-//        rightData = createRightData()
+
         
         Task{
             let rightOrder = await getData(url: "http://127.0.0.1:8000/Menu?order=c2")
@@ -71,26 +71,22 @@ class SubRightTableViewController: UIViewController, UITableViewDataSource, UITa
         } else{
             rightCell.backgroundColor = UIColor.systemGray5
         }
+        if selectedIndex == indexPath{
+            rightCell.RightTableViewLabel.textColor = .white
+            // change color for cell background
+            rightCell.backgroundColor = UIColor(red: 44/255.0, green: 105/255.0, blue: 156/255.0, alpha: 1)
+        }
+        else{
+            rightCell.RightTableViewLabel.textColor = .black
+        }
 
         return rightCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let rightCell = tableView.cellForRow(at: indexPath) as! RightTableViewCell
-        rightCell.RightTableViewLabel.textColor = .white
-        // change color for cell background
-        Utilities.formatCellBackroundOnClick(cell: rightCell)
-        
-        let vc = RightViewOfRightViewController()
-        vc.text = rightCell.RightTableViewLabel.text!
-        present(vc, animated: true, completion: nil)
-        
-        
+        selectedIndex = indexPath
+        self.rightTableView.reloadData()
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        if let rightCell = tableView.cellForRow(at: indexPath) as? RightTableViewCell{
-            rightCell.RightTableViewLabel.textColor = .black
-        }
-        
     }
 }

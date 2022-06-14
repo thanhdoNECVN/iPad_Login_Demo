@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C07A2F6EB4911B9828BD9BC /* Pods_iPad_login_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F252C3510DC4371D89E965 /* Pods_iPad_login_Demo.framework */; };
+		DF4480592850728D00592BD7 /* TempCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4480572850728D00592BD7 /* TempCell.swift */; };
+		DF44805A2850728D00592BD7 /* TempCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4480582850728D00592BD7 /* TempCell.xib */; };
 		DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */; };
 		DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */; };
 		DF743BEC283CE9280011447C /* SubLeftMenu_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */; };
@@ -35,6 +38,12 @@
 		DF743C432846021E0011447C /* SubMenuRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743C412846021E0011447C /* SubMenuRightTableViewCell.xib */; };
 		DF743C4528460EC50011447C /* subMenuTBV.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743C4428460EC50011447C /* subMenuTBV.swift */; };
 		DFDF9F732848A12600153359 /* models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF9F722848A12600153359 /* models.swift */; };
+		DFDF9F78284DF49900153359 /* SubGrapthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF9F76284DF49900153359 /* SubGrapthViewController.swift */; };
+		DFDF9F79284DF49900153359 /* SubGrapthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDF9F77284DF49900153359 /* SubGrapthViewController.xib */; };
+		DFDF9F7C284E096700153359 /* grapthMenuDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF9F7A284E096700153359 /* grapthMenuDayCell.swift */; };
+		DFDF9F7D284E096700153359 /* grapthMenuDayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDF9F7B284E096700153359 /* grapthMenuDayCell.xib */; };
+		DFDF9F80284E0F1600153359 /* imageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFDF9F7E284E0F1600153359 /* imageViewCell.swift */; };
+		DFDF9F81284E0F1600153359 /* imageViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFDF9F7F284E0F1600153359 /* imageViewCell.xib */; };
 		DFE5E910282D71160030449A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E90F282D71160030449A /* AppDelegate.swift */; };
 		DFE5E912282D71160030449A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E911282D71160030449A /* SceneDelegate.swift */; };
 		DFE5E914282D71160030449A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE5E913282D71160030449A /* ViewController.swift */; };
@@ -54,6 +63,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02AB010B4689EFC51C2342B4 /* Pods-iPad_login_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_login_Demo.release.xcconfig"; path = "Target Support Files/Pods-iPad_login_Demo/Pods-iPad_login_Demo.release.xcconfig"; sourceTree = "<group>"; };
+		21F252C3510DC4371D89E965 /* Pods_iPad_login_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPad_login_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF4480572850728D00592BD7 /* TempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCell.swift; sourceTree = "<group>"; };
+		DF4480582850728D00592BD7 /* TempCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempCell.xib; sourceTree = "<group>"; };
 		DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubLeftMenu_ViewController.swift; sourceTree = "<group>"; };
 		DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubLeftMenu_ViewController.xib; sourceTree = "<group>"; };
@@ -82,6 +95,12 @@
 		DF743C412846021E0011447C /* SubMenuRightTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubMenuRightTableViewCell.xib; sourceTree = "<group>"; };
 		DF743C4428460EC50011447C /* subMenuTBV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subMenuTBV.swift; sourceTree = "<group>"; };
 		DFDF9F722848A12600153359 /* models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = models.swift; sourceTree = "<group>"; };
+		DFDF9F76284DF49900153359 /* SubGrapthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubGrapthViewController.swift; sourceTree = "<group>"; };
+		DFDF9F77284DF49900153359 /* SubGrapthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubGrapthViewController.xib; sourceTree = "<group>"; };
+		DFDF9F7A284E096700153359 /* grapthMenuDayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grapthMenuDayCell.swift; sourceTree = "<group>"; };
+		DFDF9F7B284E096700153359 /* grapthMenuDayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = grapthMenuDayCell.xib; sourceTree = "<group>"; };
+		DFDF9F7E284E0F1600153359 /* imageViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imageViewCell.swift; sourceTree = "<group>"; };
+		DFDF9F7F284E0F1600153359 /* imageViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imageViewCell.xib; sourceTree = "<group>"; };
 		DFE5E90C282D71160030449A /* iPad_login_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPad_login_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFE5E90F282D71160030449A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFE5E911282D71160030449A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +119,7 @@
 		DFE5E988283C838E0030449A /* CustomeNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomeNibView.swift; sourceTree = "<group>"; };
 		DFE5E98A283C86810030449A /* OrderMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderMenuViewController.swift; sourceTree = "<group>"; };
 		DFE5E997283CB8400030449A /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		E29CC4772F501A8698EDEC33 /* Pods-iPad_login_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iPad_login_Demo.debug.xcconfig"; path = "Target Support Files/Pods-iPad_login_Demo/Pods-iPad_login_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,23 +127,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C07A2F6EB4911B9828BD9BC /* Pods_iPad_login_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52050748AD3FA280BD560821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21F252C3510DC4371D89E965 /* Pods_iPad_login_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B287209A7273D36FA2F1E63F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E29CC4772F501A8698EDEC33 /* Pods-iPad_login_Demo.debug.xcconfig */,
+				02AB010B4689EFC51C2342B4 /* Pods-iPad_login_Demo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DF743C1128424D360011447C /* 02.SubMenu */ = {
 			isa = PBXGroup;
 			children = (
 				DF743C182842508F0011447C /* SubMenuHomeViewController.swift */,
 				DF743C2128425E170011447C /* SubMenuLeftViewController.swift */,
-				DF743C2228425E170011447C /* SubMenuLeftViewController.xib */,
 				DF743C3C2845ECA80011447C /* SubMenuRightViewController.swift */,
-				DF743C3D2845ECA80011447C /* SubMenuRightViewController.xib */,
-				DF743C402846021E0011447C /* SubMenuRightTableViewCell.swift */,
-				DF743C412846021E0011447C /* SubMenuRightTableViewCell.xib */,
-				DF743C4428460EC50011447C /* subMenuTBV.swift */,
+				DFDF9F7A284E096700153359 /* grapthMenuDayCell.swift */,
+				DFDF9F7B284E096700153359 /* grapthMenuDayCell.xib */,
+				DFDF9F7E284E0F1600153359 /* imageViewCell.swift */,
+				DFDF9F7F284E0F1600153359 /* imageViewCell.xib */,
+				DF4480572850728D00592BD7 /* TempCell.swift */,
+				DF4480582850728D00592BD7 /* TempCell.xib */,
 			);
 			path = 02.SubMenu;
 			sourceTree = "<group>";
@@ -131,8 +171,12 @@
 		DF743C1328424E850011447C /* 02.SubMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DFDF9F75284DF36400153359 /* RightView */,
+				DFDF9F74284DF35800153359 /* LeftView */,
 				DF743C252845BB4D0011447C /* Cells */,
 				DF743C192842508F0011447C /* SubMenuHomeViewController.xib */,
+				DFDF9F76284DF49900153359 /* SubGrapthViewController.swift */,
+				DFDF9F77284DF49900153359 /* SubGrapthViewController.xib */,
 			);
 			path = 02.SubMenu;
 			sourceTree = "<group>";
@@ -152,6 +196,7 @@
 				DF743C312845CB280011447C /* SubMenuLeft_LeftCell.xib */,
 				DF743C382845D50B0011447C /* SubMenuLeft_RightCell.swift */,
 				DF743C392845D50B0011447C /* SubMenuLeft_RightCell.xib */,
+				DF743C412846021E0011447C /* SubMenuRightTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -170,6 +215,8 @@
 		DF743C2B2845C10C0011447C /* SubMenu */ = {
 			isa = PBXGroup;
 			children = (
+				DF743C402846021E0011447C /* SubMenuRightTableViewCell.swift */,
+				DF743C4428460EC50011447C /* subMenuTBV.swift */,
 			);
 			path = SubMenu;
 			sourceTree = "<group>";
@@ -182,11 +229,29 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		DFDF9F74284DF35800153359 /* LeftView */ = {
+			isa = PBXGroup;
+			children = (
+				DF743C2228425E170011447C /* SubMenuLeftViewController.xib */,
+			);
+			path = LeftView;
+			sourceTree = "<group>";
+		};
+		DFDF9F75284DF36400153359 /* RightView */ = {
+			isa = PBXGroup;
+			children = (
+				DF743C3D2845ECA80011447C /* SubMenuRightViewController.xib */,
+			);
+			path = RightView;
+			sourceTree = "<group>";
+		};
 		DFE5E903282D71160030449A = {
 			isa = PBXGroup;
 			children = (
 				DFE5E90E282D71160030449A /* iPad_login_Demo */,
 				DFE5E90D282D71160030449A /* Products */,
+				B287209A7273D36FA2F1E63F /* Pods */,
+				52050748AD3FA280BD560821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -356,9 +421,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFE5E920282D71170030449A /* Build configuration list for PBXNativeTarget "iPad_login_Demo" */;
 			buildPhases = (
+				1A16EBFD800B6D7EFF893A2E /* [CP] Check Pods Manifest.lock */,
 				DFE5E908282D71160030449A /* Sources */,
 				DFE5E909282D71160030449A /* Frameworks */,
 				DFE5E90A282D71160030449A /* Resources */,
+				BB544BF171AC2E70D50D74B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -416,11 +483,15 @@
 				DF743BF8283F34B20011447C /* RightViewOfRightViewController.xib in Resources */,
 				DF743C1528424EBA0011447C /* Header.xib in Resources */,
 				DFE5E91C282D71170030449A /* LaunchScreen.storyboard in Resources */,
+				DFDF9F7D284E096700153359 /* grapthMenuDayCell.xib in Resources */,
+				DFDF9F79284DF49900153359 /* SubGrapthViewController.xib in Resources */,
 				DF743C3B2845D50B0011447C /* SubMenuLeft_RightCell.xib in Resources */,
+				DF44805A2850728D00592BD7 /* TempCell.xib in Resources */,
 				DF743BEC283CE9280011447C /* SubLeftMenu_ViewController.xib in Resources */,
 				DFE5E919282D71170030449A /* Assets.xcassets in Resources */,
 				DF743C3F2845ECA80011447C /* SubMenuRightViewController.xib in Resources */,
 				DF743C2428425E170011447C /* SubMenuLeftViewController.xib in Resources */,
+				DFDF9F81284E0F1600153359 /* imageViewCell.xib in Resources */,
 				DF743BF0283E37650011447C /* BottomLeftViewController.xib in Resources */,
 				DFE5E941283B33D90030449A /* OrderMenuViewController.xib in Resources */,
 				DF743C332845CB280011447C /* SubMenuLeft_LeftCell.xib in Resources */,
@@ -428,6 +499,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A16EBFD800B6D7EFF893A2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iPad_login_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB544BF171AC2E70D50D74B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPad_login_Demo/Pods-iPad_login_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iPad_login_Demo/Pods-iPad_login_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iPad_login_Demo/Pods-iPad_login_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DFE5E908282D71160030449A /* Sources */ = {
@@ -442,6 +555,7 @@
 				DF743BF7283F34B20011447C /* RightViewOfRightViewController.swift in Sources */,
 				DF743BEF283E37650011447C /* BottomLeftViewController.swift in Sources */,
 				DF743C2028425B170011447C /* BaseViewController.swift in Sources */,
+				DFDF9F7C284E096700153359 /* grapthMenuDayCell.swift in Sources */,
 				DFE5E998283CB8400030449A /* Header.swift in Sources */,
 				DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */,
 				DFDF9F732848A12600153359 /* models.swift in Sources */,
@@ -449,6 +563,7 @@
 				DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */,
 				DFE5E925282D73460030449A /* LoginViewController.swift in Sources */,
 				DF743C3A2845D50B0011447C /* SubMenuLeft_RightCell.swift in Sources */,
+				DFDF9F78284DF49900153359 /* SubGrapthViewController.swift in Sources */,
 				DFE5E914282D71160030449A /* ViewController.swift in Sources */,
 				DFE5E910282D71160030449A /* AppDelegate.swift in Sources */,
 				DF743C2328425E170011447C /* SubMenuLeftViewController.swift in Sources */,
@@ -456,8 +571,10 @@
 				DF743BF3283F28AB0011447C /* SubRightTabeViewController.swift in Sources */,
 				DFE5E912282D71160030449A /* SceneDelegate.swift in Sources */,
 				DF743C0F283F891B0011447C /* leftTableViewCell.swift in Sources */,
+				DFDF9F80284E0F1600153359 /* imageViewCell.swift in Sources */,
 				DFE5E989283C838E0030449A /* CustomeNibView.swift in Sources */,
 				DF743C4528460EC50011447C /* subMenuTBV.swift in Sources */,
+				DF4480592850728D00592BD7 /* TempCell.swift in Sources */,
 				DFE5E931283387050030449A /* rightTBV.swift in Sources */,
 				DF743C3E2845ECA80011447C /* SubMenuRightViewController.swift in Sources */,
 				DF743C1E284259260011447C /* Contanst.swift in Sources */,
@@ -596,6 +713,7 @@
 		};
 		DFE5E921282D71170030449A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E29CC4772F501A8698EDEC33 /* Pods-iPad_login_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -625,6 +743,7 @@
 		};
 		DFE5E922282D71170030449A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AB010B4689EFC51C2342B4 /* Pods-iPad_login_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

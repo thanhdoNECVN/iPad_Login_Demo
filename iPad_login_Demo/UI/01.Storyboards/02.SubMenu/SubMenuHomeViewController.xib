@@ -32,11 +32,11 @@
                     <rect key="frame" x="0.0" y="64" width="1024" height="704"/>
                 </imageView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KDX-iU-uPr" userLabel="SubMenuLeftContainer">
-                    <rect key="frame" x="15" y="79" width="460" height="674"/>
+                    <rect key="frame" x="15" y="79" width="408" height="674"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQu-h6-LzN" userLabel="SubMenuRightContainer">
-                    <rect key="frame" x="490" y="79" width="519" height="674"/>
+                    <rect key="frame" x="439" y="79" width="570" height="674"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
             </subviews>
@@ -48,8 +48,8 @@
                 <constraint firstItem="7Tu-s7-uwe" firstAttribute="top" secondItem="xMi-Lm-Tnz" secondAttribute="top" id="7e7-Bf-cvp"/>
                 <constraint firstItem="4OS-eN-hQD" firstAttribute="top" secondItem="7Tu-s7-uwe" secondAttribute="bottom" id="BC3-2U-Gjd"/>
                 <constraint firstItem="2WP-tj-Acw" firstAttribute="trailing" secondItem="4OS-eN-hQD" secondAttribute="trailing" id="Cmo-eT-2TE"/>
-                <constraint firstAttribute="trailing" secondItem="KDX-iU-uPr" secondAttribute="trailing" constant="549" id="F6I-pC-B6L"/>
-                <constraint firstItem="iQu-h6-LzN" firstAttribute="leading" secondItem="KDX-iU-uPr" secondAttribute="trailing" constant="15" id="LW6-1s-VQ8"/>
+                <constraint firstAttribute="trailing" secondItem="KDX-iU-uPr" secondAttribute="trailing" constant="601" id="F6I-pC-B6L"/>
+                <constraint firstItem="iQu-h6-LzN" firstAttribute="leading" secondItem="KDX-iU-uPr" secondAttribute="trailing" constant="16" id="LW6-1s-VQ8"/>
                 <constraint firstItem="KDX-iU-uPr" firstAttribute="top" secondItem="7Tu-s7-uwe" secondAttribute="bottom" constant="15" id="cVf-nh-9z7"/>
                 <constraint firstItem="4OS-eN-hQD" firstAttribute="leading" secondItem="2WP-tj-Acw" secondAttribute="leading" id="gMl-Zu-t4q"/>
                 <constraint firstItem="iQu-h6-LzN" firstAttribute="top" secondItem="7Tu-s7-uwe" secondAttribute="bottom" constant="15" id="gv9-31-9LC"/>

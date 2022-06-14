@@ -27,3 +27,11 @@ struct RightOrderMenuModel: Codable{
 struct RightSubMenuModel: Codable{
     let lead_time, edit_date, order_qty, order_cost, plan_ratio, week_date, plan_cost: String
 }
+
+struct LoginResponce: Codable{
+    let status: String
+}
+
+struct SecondRightSubMenuModel: Codable{
+    let edit_date, temp_high, temp_low, guest_qty, sales_qty, sales_money, priceoff_qty, priceoff_money, loss_qty, loss_money, date, week_date, weather_morning, weather_after: String
+}

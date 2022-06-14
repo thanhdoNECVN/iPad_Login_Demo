@@ -16,11 +16,16 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubMenuRightViewController" customModule="iPad_login_Demo" customModuleProvider="target">
             <connections>
+                <outlet property="bodyView" destination="5y3-Om-HGb" id="Lyl-OQ-bM6"/>
                 <outlet property="centerView" destination="HKS-CI-Gbg" id="xvS-SU-5hX"/>
                 <outlet property="dropButtonView" destination="5lL-82-Z0y" id="YEr-ES-oUG"/>
                 <outlet property="normalOrderButton" destination="mjc-37-AZQ" id="lER-Pd-eqO"/>
-                <outlet property="orderButton1" destination="j6P-Kc-096" id="qim-0o-Hhj"/>
-                <outlet property="orderButton2" destination="Zl0-LY-Xgv" id="xGt-jD-FtR"/>
+                <outlet property="orderButton1" destination="ED3-vD-m10" id="LN1-2x-bys"/>
+                <outlet property="orderButton1ImageView" destination="yfY-Yn-mTR" id="P1Q-dg-xnE"/>
+                <outlet property="orderButton1View" destination="ern-tM-ssZ" id="wO0-9C-LTK"/>
+                <outlet property="orderButton2" destination="s1f-Rm-d2Y" id="jgF-rX-cKn"/>
+                <outlet property="orderButton2ImageView" destination="m4b-vA-egS" id="jES-U7-3YQ"/>
+                <outlet property="orderButton2View" destination="j6P-Kc-096" id="0nV-So-Nxb"/>
                 <outlet property="orderEntryButton" destination="eg0-YB-70Q" id="Ufr-mP-MV7"/>
                 <outlet property="orderProofButton" destination="RoT-FO-Rsv" id="UyK-oX-4DG"/>
                 <outlet property="rightSubTableView" destination="EQS-oZ-LbQ" id="Gik-md-vUO"/>
@@ -69,40 +74,70 @@
                                 <constraint firstItem="2VK-GG-iPx" firstAttribute="centerY" secondItem="5lL-82-Z0y" secondAttribute="centerY" id="Zs1-5m-5yH"/>
                             </constraints>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl0-LY-Xgv">
-                            <rect key="frame" x="901" y="0.0" width="123" height="52"/>
-                            <color key="backgroundColor" red="0.97254908080000002" green="0.97254908080000002" blue="0.97254908080000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="123" id="0KY-t4-fcc"/>
-                            </constraints>
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="発注実績">
-                                <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
-                            </buttonConfiguration>
-                        </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j6P-Kc-096">
                             <rect key="frame" x="778" y="0.0" width="123" height="52"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_5" translatesAutoresizingMaskIntoConstraints="NO" id="m4b-vA-egS">
                                     <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="実績参照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-BD-xwQ">
-                                    <rect key="frame" x="27" y="16" width="69.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                    <color key="textColor" systemColor="tertiarySystemBackgroundColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1f-Rm-d2Y">
+                                    <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="実績参照">
+                                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="Button2Tapped:" destination="-1" eventType="touchUpInside" id="iMn-Qt-kM0"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.19607841970000001" green="0.2235293984" blue="0.25098040700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
+                                <constraint firstItem="s1f-Rm-d2Y" firstAttribute="top" secondItem="j6P-Kc-096" secondAttribute="top" id="0Xi-ge-9Eg"/>
                                 <constraint firstAttribute="width" constant="123" id="Gft-v1-Ggm"/>
-                                <constraint firstItem="CXt-BD-xwQ" firstAttribute="centerY" secondItem="j6P-Kc-096" secondAttribute="centerY" id="JAV-hV-PfK"/>
+                                <constraint firstAttribute="bottom" secondItem="s1f-Rm-d2Y" secondAttribute="bottom" id="HI9-Mz-TB1"/>
+                                <constraint firstAttribute="trailing" secondItem="s1f-Rm-d2Y" secondAttribute="trailing" id="Hf7-hl-KgL"/>
+                                <constraint firstItem="s1f-Rm-d2Y" firstAttribute="leading" secondItem="j6P-Kc-096" secondAttribute="leading" id="KQb-pQ-7zd"/>
                                 <constraint firstItem="m4b-vA-egS" firstAttribute="top" secondItem="j6P-Kc-096" secondAttribute="top" id="VBi-Xr-5L5"/>
                                 <constraint firstItem="m4b-vA-egS" firstAttribute="leading" secondItem="j6P-Kc-096" secondAttribute="leading" id="lZP-v7-0Np"/>
                                 <constraint firstAttribute="bottom" secondItem="m4b-vA-egS" secondAttribute="bottom" id="lwl-XJ-Lgz"/>
-                                <constraint firstItem="CXt-BD-xwQ" firstAttribute="centerX" secondItem="j6P-Kc-096" secondAttribute="centerX" id="vxR-mi-5bx"/>
                                 <constraint firstAttribute="trailing" secondItem="m4b-vA-egS" secondAttribute="trailing" id="zPw-yJ-1wP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ern-tM-ssZ">
+                            <rect key="frame" x="901" y="0.0" width="123" height="52"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_5" translatesAutoresizingMaskIntoConstraints="NO" id="yfY-Yn-mTR">
+                                    <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ED3-vD-m10">
+                                    <rect key="frame" x="0.0" y="0.0" width="123" height="52"/>
+                                    <color key="tintColor" red="0.1843137443" green="0.22745099660000001" blue="0.22745099660000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="発注実績">
+                                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="Button1Tapped:" destination="-1" eventType="touchUpInside" id="YoX-2d-21Z"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="yfY-Yn-mTR" firstAttribute="top" secondItem="ern-tM-ssZ" secondAttribute="top" id="12c-Sc-GRx"/>
+                                <constraint firstAttribute="trailing" secondItem="yfY-Yn-mTR" secondAttribute="trailing" id="2XG-Um-G6G"/>
+                                <constraint firstItem="ED3-vD-m10" firstAttribute="leading" secondItem="ern-tM-ssZ" secondAttribute="leading" id="31d-Rm-Suo"/>
+                                <constraint firstAttribute="width" constant="123" id="3tp-YB-dPh"/>
+                                <constraint firstAttribute="trailing" secondItem="ED3-vD-m10" secondAttribute="trailing" id="9xU-Xe-RHB"/>
+                                <constraint firstItem="yfY-Yn-mTR" firstAttribute="top" secondItem="ern-tM-ssZ" secondAttribute="top" id="Asz-PK-HlA"/>
+                                <constraint firstAttribute="bottom" secondItem="yfY-Yn-mTR" secondAttribute="bottom" id="ItM-kC-Bcc"/>
+                                <constraint firstAttribute="bottom" secondItem="ED3-vD-m10" secondAttribute="bottom" id="fpU-bx-Vj2"/>
+                                <constraint firstItem="yfY-Yn-mTR" firstAttribute="leading" secondItem="ern-tM-ssZ" secondAttribute="leading" id="izd-3S-cM0"/>
+                                <constraint firstItem="yfY-Yn-mTR" firstAttribute="leading" secondItem="ern-tM-ssZ" secondAttribute="leading" id="jgG-nH-32l"/>
+                                <constraint firstAttribute="trailing" secondItem="yfY-Yn-mTR" secondAttribute="trailing" id="lMe-le-Jcw"/>
+                                <constraint firstItem="ED3-vD-m10" firstAttribute="top" secondItem="ern-tM-ssZ" secondAttribute="top" id="oOr-iu-sWh"/>
+                                <constraint firstAttribute="bottom" secondItem="yfY-Yn-mTR" secondAttribute="bottom" id="qcN-mM-bCO"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -110,20 +145,22 @@
                     <constraints>
                         <constraint firstItem="Wu8-nJ-yWf" firstAttribute="leading" secondItem="Ebz-F4-3Cr" secondAttribute="leading" constant="10" id="3QB-KO-iAL"/>
                         <constraint firstItem="5lL-82-Z0y" firstAttribute="centerY" secondItem="Ebz-F4-3Cr" secondAttribute="centerY" id="Ayf-RN-leP"/>
+                        <constraint firstAttribute="bottom" secondItem="ern-tM-ssZ" secondAttribute="bottom" constant="-18" id="B8T-m4-8J5"/>
+                        <constraint firstItem="j6P-Kc-096" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="top" id="Df3-dt-Jyq"/>
+                        <constraint firstItem="ern-tM-ssZ" firstAttribute="leading" secondItem="j6P-Kc-096" secondAttribute="trailing" id="H5S-Pb-8Da"/>
                         <constraint firstItem="Wu8-nJ-yWf" firstAttribute="centerY" secondItem="Ebz-F4-3Cr" secondAttribute="centerY" id="IxQ-ov-kyE"/>
-                        <constraint firstAttribute="bottom" secondItem="Zl0-LY-Xgv" secondAttribute="bottom" constant="-18" id="R3u-3M-Yuw"/>
                         <constraint firstItem="j6P-Kc-096" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="top" id="RaB-ZA-Vck"/>
                         <constraint firstItem="5lL-82-Z0y" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="top" id="Rgz-8x-6Yk"/>
-                        <constraint firstAttribute="trailing" secondItem="Zl0-LY-Xgv" secondAttribute="trailing" id="Yad-4h-ExZ"/>
+                        <constraint firstItem="ern-tM-ssZ" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="top" id="a7f-wG-CEF"/>
+                        <constraint firstAttribute="bottom" secondItem="j6P-Kc-096" secondAttribute="bottom" constant="-18" id="aAX-4f-DAe"/>
                         <constraint firstAttribute="height" constant="34" id="cKc-nM-lJ6"/>
                         <constraint firstAttribute="bottom" secondItem="j6P-Kc-096" secondAttribute="bottom" constant="-18" id="fWW-Jz-Vxl"/>
+                        <constraint firstAttribute="trailing" secondItem="ern-tM-ssZ" secondAttribute="trailing" id="tCh-32-4bZ"/>
                         <constraint firstItem="5lL-82-Z0y" firstAttribute="leading" secondItem="Wu8-nJ-yWf" secondAttribute="trailing" constant="10" id="tag-zP-koR"/>
-                        <constraint firstItem="Zl0-LY-Xgv" firstAttribute="leading" secondItem="j6P-Kc-096" secondAttribute="trailing" id="yWl-Ld-Wq0"/>
-                        <constraint firstItem="Zl0-LY-Xgv" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="top" id="zoY-CT-avx"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5y3-Om-HGb" userLabel="body View">
-                    <rect key="frame" x="0.0" y="48" width="1024" height="720"/>
+                    <rect key="frame" x="0.0" y="48" width="1024" height="677"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRl-2s-v2O" userLabel="HeaderView">
                             <rect key="frame" x="0.0" y="0.0" width="1024" height="38"/>
@@ -271,110 +308,7 @@
                                 <constraint firstAttribute="bottom" secondItem="6Fp-x6-AOQ" secondAttribute="bottom" id="uSs-vt-g6X"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJT-69-e1I" userLabel="Footer View">
-                            <rect key="frame" x="0.0" y="677" width="1024" height="43"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-AO-Yrh">
-                                    <rect key="frame" x="0.0" y="10" width="1024" height="33"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoT-FO-Rsv" userLabel="Order Proof Button">
-                                            <rect key="frame" x="0.0" y="0.0" width="248.5" height="33"/>
-                                            <color key="backgroundColor" red="0.47450977560000002" green="0.71372550729999995" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="発注プルーフ">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                    <color key="value" name="mediumTurquoise"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                    <color key="value" name="sapphire"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="4"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-37-AZQ" userLabel="Normal Order Button">
-                                            <rect key="frame" x="258.5" y="0.0" width="248.5" height="33"/>
-                                            <color key="backgroundColor" red="0.55294120309999995" green="0.79215681550000006" blue="0.74901962280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="18"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="通常発注">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                    <color key="value" name="mediumTurquoise"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                    <color key="value" name="sapphire"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="4"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1U-8C-06X" userLabel="Weekly Order Button">
-                                            <rect key="frame" x="517" y="0.0" width="248.5" height="33"/>
-                                            <color key="backgroundColor" red="0.69019609689999994" green="0.5411764979" blue="0.30980393290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="18"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="週間発注">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                    <color key="value" name="mediumTurquoise"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                    <color key="value" name="sapphire"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="4"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-YB-70Q" userLabel="Order Entry Button">
-                                            <rect key="frame" x="775.5" y="0.0" width="248.5" height="33"/>
-                                            <color key="backgroundColor" red="0.6549019814" green="0.48235297199999999" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="18"/>
-                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                            <state key="normal" title="特売発注">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </state>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                                    <color key="value" name="mediumTurquoise"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                                    <color key="value" name="sapphire"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="4"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </button>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="eg0-YB-70Q" firstAttribute="width" secondItem="RoT-FO-Rsv" secondAttribute="width" id="7mX-3D-iu9"/>
-                                        <constraint firstItem="mjc-37-AZQ" firstAttribute="width" secondItem="RoT-FO-Rsv" secondAttribute="width" id="ox6-cW-nTD"/>
-                                        <constraint firstItem="M1U-8C-06X" firstAttribute="width" secondItem="RoT-FO-Rsv" secondAttribute="width" id="yf7-o1-qdc"/>
-                                    </constraints>
-                                </stackView>
-                            </subviews>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="43" id="7qZ-l7-sbK"/>
-                                <constraint firstAttribute="bottom" secondItem="MSD-AO-Yrh" secondAttribute="bottom" id="ITg-Yb-y62"/>
-                                <constraint firstAttribute="trailing" secondItem="MSD-AO-Yrh" secondAttribute="trailing" id="b8b-oE-mO9"/>
-                                <constraint firstItem="MSD-AO-Yrh" firstAttribute="top" secondItem="MJT-69-e1I" secondAttribute="top" constant="10" id="nun-B7-XH4"/>
-                                <constraint firstItem="MSD-AO-Yrh" firstAttribute="leading" secondItem="MJT-69-e1I" secondAttribute="leading" id="rq7-Ug-ZtW"/>
-                            </constraints>
-                        </view>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="45" estimatedRowHeight="-1" sectionHeaderHeight="45" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EQS-oZ-LbQ">
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="42" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EQS-oZ-LbQ">
                             <rect key="frame" x="58" y="38" width="966" height="639"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -383,21 +317,118 @@
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="Qpt-Lw-uGh" firstAttribute="top" secondItem="fRl-2s-v2O" secondAttribute="bottom" id="3Oj-c0-rfA"/>
-                        <constraint firstAttribute="bottom" secondItem="MJT-69-e1I" secondAttribute="bottom" id="7Zg-xd-XFO"/>
-                        <constraint firstAttribute="bottom" secondItem="MJT-69-e1I" secondAttribute="bottom" id="Bzb-sR-SlT"/>
-                        <constraint firstItem="MJT-69-e1I" firstAttribute="leading" secondItem="5y3-Om-HGb" secondAttribute="leading" id="CP4-h2-6De"/>
+                        <constraint firstAttribute="bottom" secondItem="EQS-oZ-LbQ" secondAttribute="bottom" id="FR5-QJ-snr"/>
                         <constraint firstItem="fRl-2s-v2O" firstAttribute="top" secondItem="5y3-Om-HGb" secondAttribute="top" id="OsJ-hE-Txu"/>
-                        <constraint firstAttribute="trailing" secondItem="MJT-69-e1I" secondAttribute="trailing" id="R0h-Cy-XMe"/>
-                        <constraint firstItem="MJT-69-e1I" firstAttribute="leading" secondItem="5y3-Om-HGb" secondAttribute="leading" id="REs-5B-2PH"/>
                         <constraint firstItem="EQS-oZ-LbQ" firstAttribute="leading" secondItem="Qpt-Lw-uGh" secondAttribute="trailing" id="SVT-zL-IDa"/>
-                        <constraint firstAttribute="trailing" secondItem="MJT-69-e1I" secondAttribute="trailing" id="Wt7-V7-oRL"/>
                         <constraint firstAttribute="trailing" secondItem="EQS-oZ-LbQ" secondAttribute="trailing" id="a6P-A2-gdc"/>
                         <constraint firstItem="Qpt-Lw-uGh" firstAttribute="leading" secondItem="5y3-Om-HGb" secondAttribute="leading" id="bJP-ZT-FUN"/>
-                        <constraint firstItem="MJT-69-e1I" firstAttribute="top" secondItem="EQS-oZ-LbQ" secondAttribute="bottom" id="bVo-ea-k9r"/>
-                        <constraint firstItem="MJT-69-e1I" firstAttribute="top" secondItem="Qpt-Lw-uGh" secondAttribute="bottom" id="dDF-kh-2SP"/>
                         <constraint firstItem="fRl-2s-v2O" firstAttribute="leading" secondItem="5y3-Om-HGb" secondAttribute="leading" id="mCx-hj-eNl"/>
                         <constraint firstItem="EQS-oZ-LbQ" firstAttribute="top" secondItem="fRl-2s-v2O" secondAttribute="bottom" id="mFE-ZD-uiC"/>
+                        <constraint firstAttribute="bottom" secondItem="Qpt-Lw-uGh" secondAttribute="bottom" id="n6j-Sd-DtH"/>
                         <constraint firstAttribute="trailing" secondItem="fRl-2s-v2O" secondAttribute="trailing" id="sze-gl-zvr"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MJT-69-e1I" userLabel="Footer View">
+                    <rect key="frame" x="0.0" y="725" width="1024" height="43"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MSD-AO-Yrh">
+                            <rect key="frame" x="0.0" y="10" width="1024" height="33"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoT-FO-Rsv" userLabel="Order Proof Button">
+                                    <rect key="frame" x="0.0" y="0.0" width="248.5" height="33"/>
+                                    <color key="backgroundColor" red="0.47450977560000002" green="0.71372550729999995" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="発注プルーフ">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="mediumTurquoise"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="sapphire"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-37-AZQ" userLabel="Normal Order Button">
+                                    <rect key="frame" x="258.5" y="0.0" width="248.5" height="33"/>
+                                    <color key="backgroundColor" red="0.55294120309999995" green="0.79215681550000006" blue="0.74901962280000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="通常発注">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="mediumTurquoise"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="sapphire"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1U-8C-06X" userLabel="Weekly Order Button">
+                                    <rect key="frame" x="517" y="0.0" width="248.5" height="33"/>
+                                    <color key="backgroundColor" red="0.69019609689999994" green="0.5411764979" blue="0.30980393290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="週間発注">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="mediumTurquoise"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="sapphire"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eg0-YB-70Q" userLabel="Order Entry Button">
+                                    <rect key="frame" x="775.5" y="0.0" width="248.5" height="33"/>
+                                    <color key="backgroundColor" red="0.6549019814" green="0.48235297199999999" blue="0.4588235021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="NotoSansJP-Bold" family="Noto Sans JP" pointSize="18"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="特売発注">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                            <color key="value" name="mediumTurquoise"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                            <color key="value" name="sapphire"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="eg0-YB-70Q" firstAttribute="width" secondItem="RoT-FO-Rsv" secondAttribute="width" id="7mX-3D-iu9"/>
+                                <constraint firstItem="mjc-37-AZQ" firstAttribute="width" secondItem="RoT-FO-Rsv" secondAttribute="width" id="ox6-cW-nTD"/>
+                                <constraint firstItem="M1U-8C-06X" firstAttribute="width" secondItem="RoT-FO-Rsv" secondAttribute="width" id="yf7-o1-qdc"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="MSD-AO-Yrh" firstAttribute="leading" secondItem="MJT-69-e1I" secondAttribute="leading" id="4cY-fO-9hr"/>
+                        <constraint firstAttribute="height" constant="43" id="7qZ-l7-sbK"/>
+                        <constraint firstAttribute="trailing" secondItem="MSD-AO-Yrh" secondAttribute="trailing" id="BMg-xf-6Uk"/>
+                        <constraint firstAttribute="bottom" secondItem="MSD-AO-Yrh" secondAttribute="bottom" id="BTE-rC-WCW"/>
+                        <constraint firstItem="MSD-AO-Yrh" firstAttribute="top" secondItem="MJT-69-e1I" secondAttribute="top" constant="10" id="nun-B7-XH4"/>
                     </constraints>
                 </view>
             </subviews>
@@ -405,12 +436,15 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Ebz-F4-3Cr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ef2-kg-Ylf"/>
-                <constraint firstAttribute="bottom" secondItem="5y3-Om-HGb" secondAttribute="bottom" id="GFT-Gr-mb9"/>
                 <constraint firstItem="5y3-Om-HGb" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="bottom" constant="14" id="Izn-9R-geX"/>
+                <constraint firstItem="MJT-69-e1I" firstAttribute="top" secondItem="5y3-Om-HGb" secondAttribute="bottom" id="LI3-F1-bQq"/>
                 <constraint firstItem="Ebz-F4-3Cr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="OCr-Ru-mgD"/>
+                <constraint firstItem="MJT-69-e1I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Xfb-Hr-20e"/>
                 <constraint firstItem="5y3-Om-HGb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Zt4-uF-Ye9"/>
                 <constraint firstItem="5y3-Om-HGb" firstAttribute="top" secondItem="Ebz-F4-3Cr" secondAttribute="bottom" constant="14" id="a4O-aB-pwn"/>
                 <constraint firstAttribute="trailing" secondItem="5y3-Om-HGb" secondAttribute="trailing" id="czu-Sp-V1p"/>
+                <constraint firstAttribute="bottom" secondItem="MJT-69-e1I" secondAttribute="bottom" id="d1X-5D-YfR"/>
+                <constraint firstAttribute="trailing" secondItem="MJT-69-e1I" secondAttribute="trailing" id="d5D-8t-D8Y"/>
                 <constraint firstAttribute="trailing" secondItem="Ebz-F4-3Cr" secondAttribute="trailing" id="nmJ-Fs-Tud"/>
                 <constraint firstItem="5y3-Om-HGb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vR1-3s-rUs"/>
             </constraints>
@@ -428,9 +462,6 @@
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>

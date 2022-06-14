@@ -12,3 +12,8 @@ enum ScreenTitle: String{
     case subMenu = "発注サブメニュー"
     
 }
+
+enum TappedButton: String{
+    case button1 = "button1"
+    case button2 = "button2"
+}

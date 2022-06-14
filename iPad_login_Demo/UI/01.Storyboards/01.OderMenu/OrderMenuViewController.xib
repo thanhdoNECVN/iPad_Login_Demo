@@ -37,7 +37,7 @@
                     <rect key="frame" x="16" y="80" width="992" height="672"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkL-cX-Ctc" userLabel="Left View Contrainer View">
-                            <rect key="frame" x="8" y="0.0" width="543" height="672"/>
+                            <rect key="frame" x="8" y="0.0" width="461" height="672"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr4-a1-HX2" userLabel="LeftTableView">
                                     <rect key="frame" x="0.0" y="0.0" width="543" height="526"/>
@@ -54,11 +54,11 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstItem="TSa-3i-BMt" firstAttribute="top" secondItem="hr4-a1-HX2" secondAttribute="bottom" constant="18" id="HBw-mh-aWZ"/>
-                                <constraint firstAttribute="trailing" secondItem="TSa-3i-BMt" secondAttribute="trailing" id="TUI-wh-RV7"/>
+                                <constraint firstAttribute="trailing" secondItem="TSa-3i-BMt" secondAttribute="trailing" constant="-82" id="TUI-wh-RV7"/>
                                 <constraint firstItem="TSa-3i-BMt" firstAttribute="leading" secondItem="KkL-cX-Ctc" secondAttribute="leading" id="afU-Gj-PIc"/>
                                 <constraint firstAttribute="bottom" secondItem="TSa-3i-BMt" secondAttribute="bottom" id="chq-2s-ddu"/>
                                 <constraint firstItem="hr4-a1-HX2" firstAttribute="top" secondItem="KkL-cX-Ctc" secondAttribute="top" id="dih-pZ-Jxh"/>
-                                <constraint firstAttribute="trailing" secondItem="hr4-a1-HX2" secondAttribute="trailing" id="gkv-nV-tQj"/>
+                                <constraint firstAttribute="trailing" secondItem="hr4-a1-HX2" secondAttribute="trailing" constant="-82" id="gkv-nV-tQj"/>
                                 <constraint firstItem="hr4-a1-HX2" firstAttribute="leading" secondItem="KkL-cX-Ctc" secondAttribute="leading" id="pRl-mF-N13"/>
                             </constraints>
                         </view>
@@ -106,7 +106,7 @@
                         <constraint firstItem="s78-qW-Tex" firstAttribute="top" secondItem="uML-1A-exC" secondAttribute="top" id="LnO-pq-576"/>
                         <constraint firstAttribute="bottom" secondItem="s78-qW-Tex" secondAttribute="bottom" id="QUQ-aW-D9k"/>
                         <constraint firstItem="s78-qW-Tex" firstAttribute="top" secondItem="uML-1A-exC" secondAttribute="top" id="RDD-Zu-gyk"/>
-                        <constraint firstItem="s78-qW-Tex" firstAttribute="leading" secondItem="KkL-cX-Ctc" secondAttribute="trailing" constant="18" id="Ty2-AU-dSq"/>
+                        <constraint firstItem="s78-qW-Tex" firstAttribute="leading" secondItem="KkL-cX-Ctc" secondAttribute="trailing" constant="100" id="Ty2-AU-dSq"/>
                         <constraint firstItem="KkL-cX-Ctc" firstAttribute="top" secondItem="s78-qW-Tex" secondAttribute="top" id="f0N-Zw-Geu"/>
                         <constraint firstAttribute="bottom" secondItem="s78-qW-Tex" secondAttribute="bottom" id="pPI-Kv-7aI"/>
                         <constraint firstAttribute="trailing" secondItem="s78-qW-Tex" secondAttribute="trailing" id="wPQ-fd-Xlb"/>

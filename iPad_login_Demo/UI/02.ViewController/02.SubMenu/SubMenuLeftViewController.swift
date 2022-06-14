@@ -18,7 +18,7 @@ class SubMenuLeftViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var rightTableView: UITableView!
     var leftData = ["ダザト","ダザト","ダザト"]
     var rightData = ["010011","010","010071","016","017001","017","017021","064","064611","064","064681","90001","010011","010011","010011","010011","010011","010011","010011","010011","010011","010011","010011","010011"]
-    
+    var selectedIndex = IndexPath(row: -1, section: 0)
     
     
     override func viewDidLoad() {
@@ -64,6 +64,15 @@ class SubMenuLeftViewController: UIViewController, UITableViewDelegate, UITableV
             let leftCell = tableView.dequeueReusableCell(withIdentifier: "SubMenuLeft_LeftCell", for: indexPath) as! SubMenuLeft_LeftCell
             leftCell.leftLabel.text = leftData[indexPath.row]
             Utilities.colorCell(cell: leftCell, index: indexPath.row)
+            
+            if selectedIndex == indexPath{
+                leftCell.backgroundColor = UIColor(red: 44/255.0, green: 105/255.0, blue: 156/255.0, alpha: 1)
+                leftCell.leftLabel.textColor = .white
+            }
+            else{
+                leftCell.leftLabel.textColor = .black
+                Utilities.colorCell(cell: leftCell, index: indexPath.row)
+            }
             return leftCell
             
         }
@@ -71,40 +80,32 @@ class SubMenuLeftViewController: UIViewController, UITableViewDelegate, UITableV
             let rightCell = tableView.dequeueReusableCell(withIdentifier: "SubMenuLeft_RightCell", for: indexPath) as! SubMenuLeft_RightCell
             rightCell.rightLabel.text = rightData[indexPath.row]
             Utilities.colorCell(cell: rightCell, index: indexPath.row)
+            
+            if selectedIndex == indexPath{
+                rightCell.backgroundColor = UIColor(red: 44/255.0, green: 105/255.0, blue: 156/255.0, alpha: 1)
+                rightCell.rightLabel.textColor = .white
+            }
+            else{
+                rightCell.rightLabel.textColor = .black
+                Utilities.colorCell(cell: rightCell, index: indexPath.row)
+            }
             return rightCell
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
         if tableView == leftTableView{
-            let leftCell = tableView.cellForRow(at: indexPath) as! SubMenuLeft_LeftCell
-            Utilities.formatCellBackroundOnClick(cell: leftCell)
-            leftCell.leftLabel.textColor = .white
-            
-            
+            selectedIndex = indexPath
+            self.leftTableView.reloadData()
         }
         else{
-            let rightCell = tableView.cellForRow(at: indexPath) as! SubMenuLeft_RightCell
-            Utilities.formatCellBackroundOnClick(cell: rightCell)
-            rightCell.rightLabel.textColor = .white
+            selectedIndex = indexPath
+            self.rightTableView.reloadData()
         }
-         
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        if tableView == leftTableView{
-            if let leftCell = tableView.cellForRow(at: indexPath) as? SubMenuLeft_LeftCell{
-                leftCell.leftLabel.textColor = .black
-                Utilities.colorCell(cell: leftCell, index: indexPath.row)
-            }
-        }
-        else{
-            if let rightCell = tableView.cellForRow(at: indexPath) as? SubMenuLeft_RightCell{
-                rightCell.rightLabel.textColor = .black
-                Utilities.colorCell(cell: rightCell, index: indexPath.row)
-            }
-        }
+
     }
     
 }
