@@ -23,6 +23,9 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var spinnerView: UIView!
+    @IBOutlet weak var spiner: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +40,7 @@ class LoginViewController: UIViewController {
         Utilities.styleTextFiel(userNameTextField)
         Utilities.styleTextFiel(passTextField)
         Utilities.styleButton(loginButton, 5)
+        
     }
 
     func getData(url: String) async -> String {
@@ -68,6 +72,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func LoginButtonTapped(_ sender: UIButton) {
+        spinnerView.alpha = 1
+        spiner.hidesWhenStopped = true
+        spiner.startAnimating()
         Task{
             let convertedUserName = (userNameTextField.text?.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed))
             let loginResponse = await getData(url: "http://127.0.0.1:8000/?username=\(String(describing: convertedUserName!))")
@@ -77,6 +84,8 @@ class LoginViewController: UIViewController {
             }else{
                 print("failed")
             }
+            spiner.stopAnimating()
+            spinnerView.alpha = 0
     
         }
             

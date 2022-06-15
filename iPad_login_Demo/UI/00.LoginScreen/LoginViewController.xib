@@ -15,6 +15,8 @@
                 <outlet property="passLeftDot" destination="OhD-gm-Qr3" id="skh-5J-aab"/>
                 <outlet property="passRightDot" destination="Djd-aD-YDa" id="A6F-NM-GJT"/>
                 <outlet property="passTextField" destination="Irm-GR-d7E" id="tOG-pm-dsL"/>
+                <outlet property="spiner" destination="Y9q-jb-XDb" id="dDu-Jj-ZQ6"/>
+                <outlet property="spinnerView" destination="rLS-2d-tYc" id="Xwc-FD-sGy"/>
                 <outlet property="userNameBottomLine" destination="ALs-iH-dOV" id="B8H-Tl-KuO"/>
                 <outlet property="userNameLeftDot" destination="UNM-ai-Fsc" id="Jnd-KA-r3t"/>
                 <outlet property="userNameRightDot" destination="g1n-5y-CNo" id="Qo8-Ua-8mI"/>
@@ -233,13 +235,31 @@
                         <constraint firstItem="fO9-le-Jtp" firstAttribute="top" secondItem="DUL-0K-pgT" secondAttribute="top" constant="105" id="wi8-nf-csq"/>
                     </constraints>
                 </stackView>
+                <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLS-2d-tYc" userLabel="spinnerView">
+                    <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Y9q-jb-XDb" userLabel="spinner">
+                            <rect key="frame" x="493.5" y="365.5" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="separatorColor"/>
+                    <constraints>
+                        <constraint firstItem="Y9q-jb-XDb" firstAttribute="centerY" secondItem="rLS-2d-tYc" secondAttribute="centerY" id="5rO-FA-nav"/>
+                        <constraint firstItem="Y9q-jb-XDb" firstAttribute="centerX" secondItem="rLS-2d-tYc" secondAttribute="centerX" id="cf1-Zs-uPq"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="rZs-Gz-csG"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="rLS-2d-tYc" firstAttribute="centerX" secondItem="O0M-Bs-zAY" secondAttribute="centerX" id="DcQ-oE-mLB"/>
                 <constraint firstItem="aWI-Sb-Id0" firstAttribute="leading" secondItem="O0M-Bs-zAY" secondAttribute="leading" id="IDY-eZ-Sv6"/>
                 <constraint firstItem="aWI-Sb-Id0" firstAttribute="top" secondItem="O0M-Bs-zAY" secondAttribute="top" id="KRu-jJ-v8Y"/>
                 <constraint firstItem="DUL-0K-pgT" firstAttribute="centerX" secondItem="O0M-Bs-zAY" secondAttribute="centerX" id="Oaa-n4-zBA"/>
+                <constraint firstItem="rLS-2d-tYc" firstAttribute="leading" secondItem="O0M-Bs-zAY" secondAttribute="leading" id="U8u-Ef-Sdq"/>
+                <constraint firstItem="rLS-2d-tYc" firstAttribute="centerY" secondItem="O0M-Bs-zAY" secondAttribute="centerY" id="UTt-dq-rtb"/>
+                <constraint firstAttribute="bottom" secondItem="rLS-2d-tYc" secondAttribute="bottom" id="VVk-LJ-f4q"/>
                 <constraint firstItem="DUL-0K-pgT" firstAttribute="centerY" secondItem="O0M-Bs-zAY" secondAttribute="centerY" id="e2g-dd-i8o"/>
                 <constraint firstAttribute="bottom" secondItem="aWI-Sb-Id0" secondAttribute="bottom" id="fKO-8N-jSr"/>
                 <constraint firstAttribute="trailing" secondItem="aWI-Sb-Id0" secondAttribute="trailing" id="kCn-Gu-5fZ"/>
@@ -256,6 +276,9 @@
         <image name="textField_background" width="340" height="65"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="separatorColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

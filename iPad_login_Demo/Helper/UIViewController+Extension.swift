@@ -82,18 +82,18 @@ public extension UIViewController {
     // ===========================
     // show loading spinner
 //    // ===========================
-//    func showSpinner(onView : UIView) {
-//        let spinnerView = LoadingView(frame: view.bounds)
-//        spinnerView.tag = constValue.keySpinnerView
-//        DispatchQueue.main.async {
-//            let foundView = onView.viewWithTag(constValue.keySpinnerView)
-//            if foundView == nil {
-//                onView.addSubview(spinnerView)
-//                spinnerView.center = onView.center
-//                vSpinner = spinnerView
-//            }
-//        }
-//    }
+    func showSpinner(onView : UIView) {
+        let spinnerView = LoadingView(frame: view.bounds)
+        spinnerView.tag = constValue.keySpinnerView
+        DispatchQueue.main.async {
+            let foundView = onView.viewWithTag(constValue.keySpinnerView)
+            if foundView == nil {
+                onView.addSubview(spinnerView)
+                spinnerView.center = onView.center
+                vSpinner = spinnerView
+            }
+        }
+    }
     
     // ===========================
     // remove spinner

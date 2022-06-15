@@ -10,6 +10,8 @@
 		2C07A2F6EB4911B9828BD9BC /* Pods_iPad_login_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F252C3510DC4371D89E965 /* Pods_iPad_login_Demo.framework */; };
 		DF4480592850728D00592BD7 /* TempCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4480572850728D00592BD7 /* TempCell.swift */; };
 		DF44805A2850728D00592BD7 /* TempCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4480582850728D00592BD7 /* TempCell.xib */; };
+		DF4480632858426A00592BD7 /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4480612858426A00592BD7 /* AlertViewController.swift */; };
+		DF4480642858426A00592BD7 /* AlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF4480622858426A00592BD7 /* AlertViewController.xib */; };
 		DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */; };
 		DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */; };
 		DF743BEC283CE9280011447C /* SubLeftMenu_ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */; };
@@ -67,6 +69,8 @@
 		21F252C3510DC4371D89E965 /* Pods_iPad_login_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iPad_login_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF4480572850728D00592BD7 /* TempCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempCell.swift; sourceTree = "<group>"; };
 		DF4480582850728D00592BD7 /* TempCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TempCell.xib; sourceTree = "<group>"; };
+		DF4480612858426A00592BD7 /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		DF4480622858426A00592BD7 /* AlertViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertViewController.xib; sourceTree = "<group>"; };
 		DF743BDF283CE16E0011447C /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DF743BE9283CE9280011447C /* SubLeftMenu_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubLeftMenu_ViewController.swift; sourceTree = "<group>"; };
 		DF743BEA283CE9280011447C /* SubLeftMenu_ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubLeftMenu_ViewController.xib; sourceTree = "<group>"; };
@@ -148,7 +152,6 @@
 				E29CC4772F501A8698EDEC33 /* Pods-iPad_login_Demo.debug.xcconfig */,
 				02AB010B4689EFC51C2342B4 /* Pods-iPad_login_Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -159,11 +162,9 @@
 				DF743C2128425E170011447C /* SubMenuLeftViewController.swift */,
 				DF743C3C2845ECA80011447C /* SubMenuRightViewController.swift */,
 				DFDF9F7A284E096700153359 /* grapthMenuDayCell.swift */,
-				DFDF9F7B284E096700153359 /* grapthMenuDayCell.xib */,
 				DFDF9F7E284E0F1600153359 /* imageViewCell.swift */,
-				DFDF9F7F284E0F1600153359 /* imageViewCell.xib */,
+				DFDF9F76284DF49900153359 /* SubGrapthViewController.swift */,
 				DF4480572850728D00592BD7 /* TempCell.swift */,
-				DF4480582850728D00592BD7 /* TempCell.xib */,
 			);
 			path = 02.SubMenu;
 			sourceTree = "<group>";
@@ -175,7 +176,9 @@
 				DFDF9F74284DF35800153359 /* LeftView */,
 				DF743C252845BB4D0011447C /* Cells */,
 				DF743C192842508F0011447C /* SubMenuHomeViewController.xib */,
-				DFDF9F76284DF49900153359 /* SubGrapthViewController.swift */,
+				DFDF9F7B284E096700153359 /* grapthMenuDayCell.xib */,
+				DFDF9F7F284E0F1600153359 /* imageViewCell.xib */,
+				DF4480582850728D00592BD7 /* TempCell.xib */,
 				DFDF9F77284DF49900153359 /* SubGrapthViewController.xib */,
 			);
 			path = 02.SubMenu;
@@ -334,6 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				DFE5E93B283B318E0030449A /* LoginViewController.xib */,
+				DF4480612858426A00592BD7 /* AlertViewController.swift */,
+				DF4480622858426A00592BD7 /* AlertViewController.xib */,
 			);
 			path = 00.LoginScreen;
 			sourceTree = "<group>";
@@ -483,6 +488,7 @@
 				DF743BF8283F34B20011447C /* RightViewOfRightViewController.xib in Resources */,
 				DF743C1528424EBA0011447C /* Header.xib in Resources */,
 				DFE5E91C282D71170030449A /* LaunchScreen.storyboard in Resources */,
+				DF4480642858426A00592BD7 /* AlertViewController.xib in Resources */,
 				DFDF9F7D284E096700153359 /* grapthMenuDayCell.xib in Resources */,
 				DFDF9F79284DF49900153359 /* SubGrapthViewController.xib in Resources */,
 				DF743C3B2845D50B0011447C /* SubMenuLeft_RightCell.xib in Resources */,
@@ -558,6 +564,7 @@
 				DFDF9F7C284E096700153359 /* grapthMenuDayCell.swift in Sources */,
 				DFE5E998283CB8400030449A /* Header.swift in Sources */,
 				DF743BE0283CE16E0011447C /* UIViewController+Extension.swift in Sources */,
+				DF4480632858426A00592BD7 /* AlertViewController.swift in Sources */,
 				DFDF9F732848A12600153359 /* models.swift in Sources */,
 				DFE5E98B283C86810030449A /* OrderMenuViewController.swift in Sources */,
 				DF743BEB283CE9280011447C /* SubLeftMenu_ViewController.swift in Sources */,
